@@ -1,5 +1,7 @@
 import $ from '../core';
 
+// Methods for working with show/hide blocks
+
 $.prototype.show = function() {
     for(let i = 0; i < this.length; i++) {
         if (!this[i].style) {

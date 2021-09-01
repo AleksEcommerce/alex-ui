@@ -96,12 +96,12 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 const $ = function (selector) {
-  return new $.prototype.init(selector); // добавили свойство в прототип 
+  return new $.prototype.init(selector); // added a property to the prototype
 };
 
 $.prototype.init = function (selector) {
   if (!selector) {
-    return this; // {} empty object
+    return this; // {} empty object 
   }
 
   ;
@@ -135,7 +135,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./core */ "./src/js/lib/core.js");
 /* harmony import */ var _modules_display__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/display */ "./src/js/lib/modules/display.js");
 /* harmony import */ var _modules_classes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/classes */ "./src/js/lib/modules/classes.js");
-/* harmony import */ var _modules_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/actions */ "./src/js/lib/modules/actions.js");
+/* harmony import */ var _modules_handlers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/handlers */ "./src/js/lib/modules/handlers.js");
+/* harmony import */ var _modules_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/actions */ "./src/js/lib/modules/actions.js");
+
 
 
 
@@ -154,43 +156,124 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core */ "./src/js/lib/core.js");
+ // Methods for working with DOM
 
-
-_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.on = function (event, callback) {
-  if (!event || !callback) {
-    return this;
-  }
-
-  ;
-
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.html = function (content) {
   for (let i = 0; i < this.length; i++) {
-    this[i].addEventListener(event, callback);
-    return this;
-  }
-};
-
-_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.off = function (event, callback) {
-  if (!event || !callback) {
-    return this;
-  }
-
-  ;
-
-  for (let i = 0; i < this.length; i++) {
-    this[i].removeEventListener(event, callback);
-    return this;
-  }
-};
-
-_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.click = function (handler) {
-  for (let i = 0; i < this.length; i++) {
-    if (handler) {
-      this[i].addEventListener('click', handler);
+    if (content) {
+      this[i].innerHTML = content;
     } else {
-      this[i].click();
+      return this[i].innerHTML;
+    }
+  }
+
+  return this;
+};
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.eq = function (i) {
+  const swap = this[i];
+  const objLength = Object.keys(this).length;
+
+  for (let i = 0; i < objLength; i++) {
+    delete this[i];
+  }
+
+  this[0] = swap;
+  this.length = 1;
+  return this;
+};
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.index = function () {
+  const parent = this[0].parentNode;
+  const childs = Array.from(parent.children); // [...parent.children] modern standart
+
+  const findMyIndex = item => {
+    return item == this[0];
+  };
+
+  return childs.findIndex(findMyIndex);
+};
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.find = function (selector) {
+  let numberOfItems = 0;
+  let counter = 0;
+  const copyObj = Object.assign({}, this); //
+
+  for (let i = 0; i < copyObj.length; i++) {
+    const arr = copyObj[i].querySelectorAll(selector);
+
+    if (arr.length == 0) {
+      continue;
     }
 
-    ;
+    for (let k = 0; k < arr.length; k++) {
+      this[counter] = arr[k];
+      counter++; // 2
+    } //3 -- 2
+
+
+    numberOfItems += arr.length;
+  }
+
+  this.length = numberOfItems; // 2
+
+  const objLength = Object.keys(this).length; // 5
+
+  for (; numberOfItems < objLength; numberOfItems++) {
+    delete this[numberOfItems];
+  }
+
+  return this;
+};
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.closest = function (selector) {
+  let counter = 0;
+
+  for (let i = 0; i < this.length; i++) {
+    this[i] = this[i].closest(selector);
+    counter++;
+  }
+
+  if (counter == 0) {
+    console.log('error');
+  }
+
+  const objLength = Object.keys(this).length;
+
+  for (; counter < objLength; counter++) {
+    delete this[counter];
+  }
+
+  return this;
+};
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.siblings = function () {
+  // length 1
+  let numberOfItems = 0;
+  let counter = 0;
+  const copyObj = Object.assign({}, this); // div.more, length: 1
+
+  for (let i = 0; i < copyObj.length; i++) {
+    const arr = copyObj[i].parentNode.children;
+
+    for (let k = 0; k < arr.length; k++) {
+      // 6
+      if (copyObj[i] === arr[k]) {
+        continue;
+      }
+
+      this[counter] = arr[k];
+      counter++;
+    }
+
+    numberOfItems += arr.length - 1;
+  }
+
+  this.length = numberOfItems;
+  const objLength = Object.keys(this).length;
+
+  for (; numberOfItems < objLength; numberOfItems++) {
+    delete this[numberOfItems];
   }
 
   return this;
@@ -208,7 +291,7 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.click = function (handle
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core */ "./src/js/lib/core.js");
-
+ // Methods for working with classes
 
 _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.addClass = function (...classes) {
   for (let i = 0; i < this.length; i++) {
@@ -258,7 +341,7 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.toggleClass = function (
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core */ "./src/js/lib/core.js");
-
+ // Methods for working with show/hide blocks
 
 _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.show = function () {
   for (let i = 0; i < this.length; i++) {
@@ -302,6 +385,60 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.toggle = function () {
 
 /***/ }),
 
+/***/ "./src/js/lib/modules/handlers.js":
+/*!****************************************!*\
+  !*** ./src/js/lib/modules/handlers.js ***!
+  \****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core */ "./src/js/lib/core.js");
+ // Event handlers file
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.on = function (event, callback) {
+  if (!event || !callback) {
+    return this;
+  }
+
+  ;
+
+  for (let i = 0; i < this.length; i++) {
+    this[i].addEventListener(event, callback);
+    return this;
+  }
+};
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.off = function (event, callback) {
+  if (!event || !callback) {
+    return this;
+  }
+
+  ;
+
+  for (let i = 0; i < this.length; i++) {
+    this[i].removeEventListener(event, callback);
+    return this;
+  }
+};
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.click = function (handler) {
+  for (let i = 0; i < this.length; i++) {
+    if (handler) {
+      this[i].addEventListener('click', handler);
+    } else {
+      this[i].click();
+    }
+
+    ;
+  }
+
+  return this;
+};
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -315,10 +452,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // $('.g-btn').on('click', function () { 
+//     $('div').eq(2).toggleClass('active');
+// });
+// $('div').click(function() {
+//     console.log($(this).index());
+// });
+// $('.some').eq(1).html('Only 1');
+// console.log($('div').find('.more'));
+//console.log($('.some').closest('.finddiv').addClass('testclass'));
 
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.g-btn').on('click', function () {
-  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])(this).toggleClass('active');
-});
+console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.more').eq(0).siblings().addClass('testclass'));
 
 /***/ })
 

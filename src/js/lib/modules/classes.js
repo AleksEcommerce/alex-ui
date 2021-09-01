@@ -1,5 +1,7 @@
 import $ from '../core';
 
+// Methods for working with classes
+
 $.prototype.addClass = function(...classes) {
     for (let i = 0; i < this.length; i++) {
         if (!this[i].classList) {
@@ -19,7 +21,7 @@ $.prototype.removeClass = function(...classes) {
         this[i].classList.remove(...classes);
     }
 
-    return this;
+    return this; 
 };
 
 $.prototype.toggleClass = function(classes) {

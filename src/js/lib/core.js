@@ -1,10 +1,11 @@
 const $ = function(selector) {
-    return new $.prototype.init(selector); // добавили свойство в прототип 
+    return new $.prototype.init(selector); // added a property to the prototype
 }
  
 $.prototype.init = function(selector) {
+    
     if (!selector) {
-        return this; // {} empty object
+        return this; // {} empty object 
     };
 
     if (selector.tagName) {
