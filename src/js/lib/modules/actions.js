@@ -81,7 +81,7 @@ $.prototype.closest = function(selector) {
 
     if (counter == 0) {
         console.log('error');
-    }
+    } 
 
     const objLength = Object.keys(this).length;
 
@@ -125,5 +125,4 @@ $.prototype.siblings = function() { // length 1
 
     return this;
 };
-
-
+ 
