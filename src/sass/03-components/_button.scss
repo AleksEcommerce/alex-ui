@@ -1,0 +1,52 @@
+/*
+# Button component
+
+This component is used for common styling for all buttons
+
+*/
+
+@mixin g-button($mod: default) {
+    background-color: color(black);
+    color: color(white);
+    padding: 10px 16px; 
+    cursor: pointer;
+    display: inline-flex; 
+    text-align: center;
+    outline: none; 
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover { 
+        background-color: color(red);
+    }
+ 
+    @if $mod == default { 
+        max-width: 100%; 
+        text-transform: uppercase; 
+        transition: background-color 0.2s;
+        vertical-align: top;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    @if $mod == disabled {
+        background-color: color(gray-1);
+        border-color: color(gray-1);
+        cursor: default;
+        color: color(gray-4);
+        pointer-events: none;
+    }
+
+    @if $mod == full { 
+        display: block;
+        width: 100%;
+    } 
+}
+
+.g-button {
+    @include g-button();
+}

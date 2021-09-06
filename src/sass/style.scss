@@ -1,7 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './01-base/all';
+@import './02-configuration/all';
+@import './03-components/all';
 
-.g-btn {}
+@include css-variables-layout; 

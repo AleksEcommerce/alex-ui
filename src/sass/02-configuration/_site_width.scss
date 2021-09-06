@@ -1,0 +1,45 @@
+$site-padding-s: 8px;
+$site-padding-l: 20px;
+
+@mixin css-variables-layout {
+    :root {
+        --content-width: 1200px;
+
+        @include media(m-up) {
+            --content-width: 768px;
+        }
+    
+        @include media(p-up) {
+            --content-width: 1024px;
+        }
+    
+        @include media(l-up) {
+            --content-width: 1200px;
+        }
+     
+        @include media(xl) {
+            --content-width: 1440px;
+        }
+    
+        @include media(s) {
+            --content-width: 100%;
+        }
+    }
+}
+
+
+@mixin container {
+    margin: 0 auto; 
+    max-width: var(--content-width);
+    padding-left: $site-padding-l; //dont use shorthand because of top padding / transparent header thing
+    padding-right: $site-padding-l; //dont use shorthand because of top padding / transparent header thing
+
+    @include media(s) {
+        padding-left: $site-padding-s; //dont use shorthand because of top padding / transparent header thing
+        padding-right: $site-padding-s; //dont use shorthand because of top padding / transparent header thing
+    }
+}
+
+.g-container { 
+    @include container;
+} 
