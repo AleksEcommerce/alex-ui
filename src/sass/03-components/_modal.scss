@@ -1,0 +1,17 @@
+.l-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    display: none;
+
+    &-container {
+        @include pos-block(50%, 50%, $type: center-xy);
+
+        background-color: color(white);
+        width: 60vw; 
+        height: 60vh; 
+        box-shadow: 0 0 7px rgba(0,0,0, 0.5);
+    }
+}

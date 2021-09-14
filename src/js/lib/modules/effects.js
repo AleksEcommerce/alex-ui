@@ -44,10 +44,8 @@ $.prototype.fadeIn = function(duration, display, final) {
 
 $.prototype.fadeOut = function(duration, final) {
     for (let i = 0; i < this.length; i++) {
-        
-
         const _fadeOut = (complection) => {
-            this[i].style.opacity = 1- complection;
+            this[i].style.opacity = 1 - complection;
 
             if (complection === 1) {
                 this[i].style.display = 'none';

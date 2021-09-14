@@ -1,0 +1,23 @@
+.b-card {
+    width: 25%;
+    background-color: color(gray-1); 
+
+    &-thumbnail {
+
+    }
+
+    &-body {
+        padding: 20px;
+    }
+
+    &-body_title {
+        @include font(regular, 24px, 32px);
+
+        margin-bottom: 10px;
+    }
+
+    &-body_content {
+        margin-bottom: 20px;
+    }
+}
+ 

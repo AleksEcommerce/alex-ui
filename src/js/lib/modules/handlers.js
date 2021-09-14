@@ -25,12 +25,12 @@ $.prototype.off = function(event, callback) {
 }
 
 $.prototype.click = function(handler) {
-    for (let i = 0; i < this.length; i++) {
+    for (let i = 0; i < this.length; i++) { 
         if (handler) {
             this[i].addEventListener('click', handler);
         } else {
-            this[i].click();
+            this[i].click(); 
         };
     }
     return this;
-};
+};  

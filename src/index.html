@@ -75,16 +75,64 @@
                 <div class="more">some</div>
                 <div class="some">some</div>
                 <div class="some">some</div>
-            </div>
+            </div> 
         </section>
     </main>
     
     <button class="g-btn">Click ME ME</button>
 
-    <div class="container">
+    <div class="g-container">
         <!-- DropDown Menu -->
+        <div class="g-dropdown">
+            <div class="g-dropdown-control g-button" data-dropdown-control id="drop-1" >Control</div>
+            <div class="g-dropdown-menu" data-dropdown-menu data-dropdown-id="drop-1">This this menu menu</div>
+        </div>
     </div>
 
+    <div class="g-container">
+        <!-- DropDown Menu -->
+        <div class="g-dropdown">
+            <div class="g-dropdown-control g-button" data-dropdown-control id="drop-2" >Control</div>
+            <div class="g-dropdown-menu" data-dropdown-menu data-dropdown-id="drop-2">This this menu menu</div>
+        </div>
+    </div>
+
+    <div class="g-container">
+        <span class="g-button m-testmodal" data-toggle="modal" data-target="modal-1">g-modal</span>
+        <span class="g-button m-testmodal" data-toggle="modal" data-target="modal-2">g-modal</span>
+    </div>
+
+    <div class="l-popup" data-modal-id="modal-1"> 
+        <div class="l-popup-container">
+            <span class="l-popup-close" data-modal-close>123</span>
+            <div class="l-popup-content">Popup Popup Popup POpup</div>
+        </div>
+    </div>
+
+    <!-- <div class="l-popup" data-modal-id="modal-2">
+        <div class="l-popup-container">
+            <span class="l-popup-close" data-modal-close>123</span>
+            <div class="l-popup-content">Popup Popup Popup POpup</div>
+        </div>
+    </div> -->
+
+    <div class="g-container">
+        <div class="b-card">
+            <figure class="b-card-thumbnail">
+                <img src="http://via.placeholder.com/640x360" alt="" class="b-card-img">
+            </figure>
+        
+            <div class="b-card-body">
+                <div class="b-card-body_title">title</div>
+                <div class="b-card-body_content">Content</div>
+                <!-- <a href="#" class="b-card-body_link g-button" data-target="modal-3">Button-modal</a> -->
+                <span class="b-card-body_link g-button" data-target="modal-3">Button-modal</span>
+            </div>
+        </div>
+    </div>
+ 
+    
+ 
     <script src='script.js'></script>
 </body>
 </html>

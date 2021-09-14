@@ -153,7 +153,8 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  border: 0;
+  max-width: 100%; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -518,7 +519,8 @@ Simply edit this file and add your own media queries to `$media` map.
   margin: 0 auto;
   max-width: var(--content-width);
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  display: flex; }
   @media screen and (max-width: 767px) {
     .g-container {
       padding-left: 8px;
@@ -1732,6 +1734,69 @@ This component is used for common styling for all buttons
   .f-textarea-label_link:hover {
     text-decoration: none; }
 
+/*
+Example:
+.g-dropdown {
+    @include dropdown;
+
+    &-control {
+        @include dropdown(control);
+    }
+
+    &-menu {
+        @include dropdown(menu);
+    }
+
+    &.m-opened &-menu {
+        @include dropdown(menu_opened);
+    }
+}
+*/
+.g-dropdown {
+  position: relative; }
+  .g-dropdown-control {
+    appearance: none;
+    cursor: pointer; }
+  .g-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; }
+  .g-dropdown.m-opened .g-dropdown-menu {
+    display: block; }
+
+.l-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+  .l-popup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateX(calc((50%) * -1)) translateY(calc((50%) * -1));
+    background-color: #fff;
+    width: 60vw;
+    height: 60vh;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
+
+.b-card {
+  width: 25%;
+  background-color: #dfdfdf; }
+  .b-card-body {
+    padding: 20px; }
+  .b-card-body_title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px; }
+  .b-card-body_content {
+    margin-bottom: 20px; }
+
 :root {
   --content-width: 1200px; }
   @media screen and (min-width: 768px) {
@@ -1749,3 +1814,6 @@ This component is used for common styling for all buttons
   @media screen and (max-width: 767px) {
     :root {
       --content-width: 100%; } }
+
+body {
+  height: 4000px; }

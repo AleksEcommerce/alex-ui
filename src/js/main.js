@@ -19,3 +19,34 @@ import $ from "./lib/lib";
 // console.log($('.more').eq(0).siblings().addClass('testclass'));
 
 // $('.more').fadeIn(2000);
+
+// $('.g-dropdown-control').dropdown();
+
+$('.g-dropdown').dropdown_attribute();
+
+$('[data-toggle="modal"]').modal();
+
+$('[data-target="modal-3"]').click(() => $('[data-target="modal-3"]').createModal({
+    text: {
+        title: 'MOdal Title',
+        content: 'Some Body'
+    },
+    btns: {
+        count: 2,
+        settings: [
+            [
+                'close',
+                ['g-button', 'close-modal'],
+                true
+            ],
+            [
+                'Save changes',
+                ['g-button', 'btn-send'],
+                false,
+                () => {
+                    alert('Data Saved')
+                }
+            ]
+        ]
+    }
+}));

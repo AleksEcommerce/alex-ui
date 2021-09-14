@@ -24,8 +24,6 @@ Example:
 
     @if $el == control {
         appearance: none;
-        background: none;
-        border: 0;
         cursor: pointer;
     }
 
@@ -37,5 +35,21 @@ Example:
 
     @if $el == menu_opened {
         display: block;
+    }
+}
+
+.g-dropdown {
+    @include dropdown;
+
+    &-control {
+        @include dropdown(control);
+    }
+
+    &-menu {
+        @include dropdown(menu);
+    }
+
+    &.m-opened &-menu {
+        @include dropdown(menu_opened);
     }
 }

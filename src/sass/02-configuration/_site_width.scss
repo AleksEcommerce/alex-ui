@@ -42,4 +42,6 @@ $site-padding-l: 20px;
 
 .g-container { 
     @include container;
+
+    display: flex;
 } 

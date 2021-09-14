@@ -1,0 +1,21 @@
+@mixin pos-block($top: auto, $left: auto, $right: auto, $bottom: auto, $type: root) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right; 
+    bottom: $bottom;
+
+    @if $type == center-x {
+        transform: translateX(calc((#{$left}) * -1));
+    }
+
+    @if $type == center-y {
+        transform: translateY(calc((#{$top}) * -1)); 
+    }
+
+    @if $type == center-xy {
+        transform: translateX(calc((#{$left}) * -1)) translateY(calc((#{$top}) * -1));
+    }
+}
+
+  
