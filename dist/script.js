@@ -140,6 +140,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_effects__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/effects */ "./src/js/lib/modules/effects.js");
 /* harmony import */ var _modules_components_dropdown__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/components/dropdown */ "./src/js/lib/modules/components/dropdown.js");
 /* harmony import */ var _modules_components_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/components/modal */ "./src/js/lib/modules/components/modal.js");
+/* harmony import */ var _modules_components_tabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/components/tabs */ "./src/js/lib/modules/components/tabs.js");
+/* harmony import */ var _modules_components_accordeon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/components/accordeon */ "./src/js/lib/modules/components/accordeon.js");
+
+
 
 
 
@@ -337,6 +341,31 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.toggleClass = function (
 
 /***/ }),
 
+/***/ "./src/js/lib/modules/components/accordeon.js":
+/*!****************************************************!*\
+  !*** ./src/js/lib/modules/components/accordeon.js ***!
+  \****************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core */ "./src/js/lib/core.js");
+
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.accordeon = function (headActive = 'according-head--active', contentActive = 'according-content-active') {
+  for (let i = 0; i < this.length; i++) {
+    Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i]).on('click', () => {
+      Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i]).toggleClass(headActive);
+      Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i].nextElementSibling).toggleClass(contentActive);
+    });
+  }
+};
+
+Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])('.accordion-head').accordeon();
+
+/***/ }),
+
 /***/ "./src/js/lib/modules/components/dropdown.js":
 /*!***************************************************!*\
   !*** ./src/js/lib/modules/components/dropdown.js ***!
@@ -465,6 +494,30 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.createModal = function (
     Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(modal).fadeIn(500);
   }
 };
+
+/***/ }),
+
+/***/ "./src/js/lib/modules/components/tabs.js":
+/*!***********************************************!*\
+  !*** ./src/js/lib/modules/components/tabs.js ***!
+  \***********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core */ "./src/js/lib/core.js");
+
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.tab = function () {
+  for (let i = 0; i < this.length; i++) {
+    Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i]).on('click', () => {
+      Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i]).addClass('tab-item--active').siblings().removeClass('tab-item--active').closest('.tab').find('.tab-content').removeClass('tab-content--active').eq(Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i]).index()).addClass('tab-content--active');
+    });
+  }
+};
+
+Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])('[data-tabpanel] .tab-item').tab();
 
 /***/ }),
 
