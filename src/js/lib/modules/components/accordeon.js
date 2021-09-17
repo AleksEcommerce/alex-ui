@@ -7,6 +7,6 @@ $.prototype.accordeon = function(headActive = 'according-head--active', contentA
             $(this[i].nextElementSibling).toggleClass(contentActive);
         });
     }  
-};
+}; 
 
 $('.accordion-head').accordeon();

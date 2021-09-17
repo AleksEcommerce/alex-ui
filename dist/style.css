@@ -1783,6 +1783,43 @@ Example:
     height: 60vh;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
 
+.g-carousel {
+  position: relative;
+  width: 100%; }
+  .g-carousel-indicators {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 10px; }
+  .g-carousel-indicators_item {
+    margin: 0 5px; }
+    .g-carousel-indicators_item.m-active {
+      background-color: red; }
+  .g-carousel-wrap {
+    overflow: hidden;
+    width: 100%; }
+  .g-carousel-list {
+    display: flex; }
+  .g-carousel-item {
+    box-sizing: content-box; }
+  .g-carousel-item_img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
+  .g-carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .g-carousel-nav_thumb {
+    font-size: 32px; }
+
 .b-card {
   width: 25%;
   background-color: #dfdfdf; }

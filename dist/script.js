@@ -142,6 +142,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_components_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/components/modal */ "./src/js/lib/modules/components/modal.js");
 /* harmony import */ var _modules_components_tabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/components/tabs */ "./src/js/lib/modules/components/tabs.js");
 /* harmony import */ var _modules_components_accordeon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/components/accordeon */ "./src/js/lib/modules/components/accordeon.js");
+/* harmony import */ var _modules_components_carousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/components/carousel */ "./src/js/lib/modules/components/carousel.js");
+
 
 
 
@@ -363,6 +365,84 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.accordeon = function (he
 };
 
 Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])('.accordion-head').accordeon();
+
+/***/ }),
+
+/***/ "./src/js/lib/modules/components/carousel.js":
+/*!***************************************************!*\
+  !*** ./src/js/lib/modules/components/carousel.js ***!
+  \***************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core */ "./src/js/lib/core.js");
+
+
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.carousel = function () {
+  for (let i = 0; i < this.length; i++) {
+    const width = window.getComputedStyle(this[i].querySelector('.g-carousel-wrap')).width;
+    const slides = this[i].querySelectorAll('.g-carousel-item');
+    const slidesField = this[i].querySelector('.g-carousel-list');
+    const pagination = this[i].querySelectorAll('.g-carousel-indicators_item');
+    slidesField.style.width = 100 * slides.length + '%';
+    slidesField.style.transition = 'all ease 0.3s';
+    slides.forEach(slide => {
+      slide.style.width = width;
+    });
+    let offset = 0;
+    let slideIndex = 0;
+
+    for (let p = 0; p < slides.length; p++) {
+      pagination[p].setAttribute('data-slide-n', `${p}`);
+    }
+
+    Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i].querySelector('[data-slide="next"]')).click(e => {
+      e.preventDefault();
+
+      if (offset == +width.replace(/\D/g, '') * (slides.length - 1)) {
+        offset = 0;
+        slideIndex = 0;
+      } else {
+        offset += +width.replace(/\D/g, '');
+        slideIndex++;
+      }
+
+      console.log(slideIndex);
+      slidesField.style.transform = `translateX(-${offset}px)`;
+      pagination.forEach(item => item.classList.remove('m-active'));
+      pagination[slideIndex].classList.add('m-active');
+    });
+    Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i].querySelector('[data-slide="prev"]')).click(e => {
+      e.preventDefault();
+
+      if (offset == 0) {
+        offset = +width.replace(/\D/g, '') * (slides.length - 1);
+        slideIndex = 0;
+      } else {
+        offset -= +width.replace(/\D/g, '');
+        slideIndex++;
+      }
+
+      console.log(slideIndex);
+      slidesField.style.transform = `translateX(-${offset}px)`;
+      pagination.forEach(item => item.classList.remove('m-active'));
+      pagination[slideIndex].classList.add('m-active');
+    });
+    const parentDiv = this[i].getAttribute('id');
+    Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(`#${parentDiv} [data-slide-n]`).click(e => {
+      const slideMove = e.target.getAttribute('data-slide-n');
+      slideIndex = slideMove;
+      offset = +width.replace(/\D/g, '') * slideMove;
+      slidesField.style.transform = `translateX(-${offset}px)`;
+      pagination.forEach(item => item.classList.remove('m-active'));
+      pagination[slideIndex].classList.add('m-active');
+    });
+  }
+};
+
+Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])('.g-carousel').carousel();
 
 /***/ }),
 
