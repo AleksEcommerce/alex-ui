@@ -8,11 +8,21 @@
         }
     }
 
-    &-column {
+    &-column { 
         flex-basis: 33.33%;
         max-width: 33.33%;
         padding: 0 10px; 
         margin-bottom: 40px;
+
+        @include media(m-down) {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        @include media(s) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
     }
 
     &-desc {
