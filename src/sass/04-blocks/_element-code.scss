@@ -1,0 +1,40 @@
+.b-element_code {
+    background-color: color(code-bg);
+    color: color(code-color);
+    border-radius: 6px;
+    padding: 10px 20px;
+    position: relative;
+
+    &-pre {
+        overflow: hidden;
+    }
+
+    &-copy {
+        @include font(thin, 12px, 1.25);
+
+        position: absolute; 
+        right: 10px;
+        top: 10px;
+        background-color: color(link);
+        padding: 3px 5px;
+        border-radius: 2px;
+        text-decoration: none;
+        color: color(white-1);
+        
+        &:hover,
+        &:visited:hover,
+        &:visited {
+            color: color(white-1);
+        }
+    }
+}
+
+.b-notice {
+    @include pos-block(80%, 50%, $type: center-xy);
+
+    position: fixed; 
+    background: color(white-1); 
+    color: color(black-1);
+    padding: 20px;
+    border-radius: 5px;
+}

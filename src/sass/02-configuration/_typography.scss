@@ -1,0 +1,41 @@
+
+body {
+    @include font(regular, 16px, 1.25);
+
+    color: var(--color-text);
+    background-color: var(--main-bg); 
+}
+ 
+h1 { 
+    @include font(thin, 42px, 1.25);
+}
+
+h2 {
+    @include font(thin, 36px, 1.25);
+}
+
+h3 {
+    @include font(thin, 32px, 1.25);
+}
+
+h4 {
+    @include font(thin, 24px, 1.25);
+}
+
+h5 {
+    @include font(thin, 16px, 1.25);
+}
+
+h6 {
+    @include font(thin, 12px, 1.25);
+}
+
+a {
+    color: color(link); 
+ 
+    &:hover,  
+    &:focus {
+        color: color(link-hover);
+    }
+}
+  

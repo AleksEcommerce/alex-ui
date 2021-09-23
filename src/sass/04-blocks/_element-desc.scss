@@ -1,0 +1,14 @@
+.b-element_text {
+    padding: 0 10px;
+
+    &-title {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    &-text {
+        @include font(thin, 14px, 1.25);
+
+        margin-bottom: 10px;
+    }
+}

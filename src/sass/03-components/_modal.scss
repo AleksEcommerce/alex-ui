@@ -7,7 +7,7 @@
     display: none;
 
     &-container {
-        @include pos-block(50%, 50%, $type: center-xy);
+        @include pos-block(90%, 50%, $type: center-xy);
 
         background-color: color(white);
         width: 60vw; 

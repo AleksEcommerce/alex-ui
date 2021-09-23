@@ -1,9 +1,13 @@
+
 @import './01-base/all';
 @import './02-configuration/all';
-@import './03-components/all';
+@import './03-components/all'; 
 @import './04-blocks/all'; 
+@import './05-sections/all'; 
 
-@include css-variables-layout; 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     height: 4000px;

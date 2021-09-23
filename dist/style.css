@@ -1,1 +1,1885 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext);*{box-sizing:border-box;margin:0;padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0;max-width:100%}svg:not(:root){overflow:hidden}figure{margin:0}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible;outline:0}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:border-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}body{font-family:Roboto,sans-serif}.m-truncate-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.b-error_sample{font-size:14px;line-height:1.25;color:#ed1c24}.b-error_bg{font-size:16px;line-height:1.25;color:#ed1c24;padding:9px 0;background-color:#fae1e2;border-bottom:2px solid #ed1c24;text-align:center}.g-container{margin:0 auto;max-width:var(--content-width);padding-left:20px;padding-right:20px;display:flex}@media screen and (max-width:767px){.g-container{padding-left:8px;padding-right:8px}}.h-hidden{display:none!important}.h-hidden-visual{opacity:0;pointer-events:none;visibility:hidden}.h-site_width{margin:0 auto;max-width:var(--content-width);padding-left:20px;padding-right:20px}@media screen and (max-width:767px){.h-site_width{padding-left:8px;padding-right:8px}}.h-hide-invisible{visibility:hidden}.h-hide-text{background-color:transparent;color:transparent;font-size:0;letter-spacing:0;line-height:0;text-shadow:none}.h-hide-visually{border:0;clip:rect(1px,1px,1px,1px);max-height:1px;max-width:1px;overflow:hidden;padding:0;position:absolute}@media screen and (max-width:767px){.h-hide-s{display:none!important}}@media screen and (min-width:768px) and (max-width:1199px){.h-hide-m{display:none!important}}@media screen and (min-width:1200px){.h-hide-l{display:none!important}}@media screen and (min-width:768px){.h-show_only-s{display:none!important}}@media screen and (max-width:767px){.h-show_only-m{display:none!important}}@media screen and (min-width:1200px){.h-show_only-m{display:none!important}}@media screen and (max-width:1199px){.h-show_only-l{display:none!important}}.h-no_events{pointer-events:none}.h-flex{display:flex}.h-left-1{margin-left:1px}.h-left-2{margin-left:2px}.h-left-3{margin-left:3px}.h-left-4{margin-left:4px}.h-left-5{margin-left:5px}.h-left-6{margin-left:6px}.h-left-7{margin-left:7px}.h-left-8{margin-left:8px}.h-left-9{margin-left:9px}.h-left-10{margin-left:10px}.h-left-11{margin-left:11px}.h-left-12{margin-left:12px}.h-left-13{margin-left:13px}.h-left-14{margin-left:14px}.h-left-15{margin-left:15px}.h-left-16{margin-left:16px}.h-left-17{margin-left:17px}.h-left-18{margin-left:18px}.h-left-19{margin-left:19px}.h-left-20{margin-left:20px}.h-left-21{margin-left:21px}.h-left-22{margin-left:22px}.h-left-23{margin-left:23px}.h-left-24{margin-left:24px}.h-left-25{margin-left:25px}.h-left-26{margin-left:26px}.h-left-27{margin-left:27px}.h-left-28{margin-left:28px}.h-left-29{margin-left:29px}.h-left-30{margin-left:30px}.h-left-31{margin-left:31px}.h-left-32{margin-left:32px}.h-left-33{margin-left:33px}.h-left-34{margin-left:34px}.h-left-35{margin-left:35px}.h-left-36{margin-left:36px}.h-left-37{margin-left:37px}.h-left-38{margin-left:38px}.h-left-39{margin-left:39px}.h-left-40{margin-left:40px}.h-left-41{margin-left:41px}.h-left-42{margin-left:42px}.h-left-43{margin-left:43px}.h-left-44{margin-left:44px}.h-left-45{margin-left:45px}.h-left-46{margin-left:46px}.h-left-47{margin-left:47px}.h-left-48{margin-left:48px}.h-left-49{margin-left:49px}.h-left-50{margin-left:50px}.g-button{background-color:#000;color:#fff;padding:10px 16px;cursor:pointer;display:inline-flex;text-align:center;outline:0;border:none;letter-spacing:1px;border-radius:4px;transition:all .3s ease;max-width:100%;text-transform:uppercase;transition:background-color .2s;vertical-align:top}.g-button:hover{background-color:#ed1c24}.g-button:hover{text-decoration:none}.f-input_checkbox{display:inline-block;vertical-align:middle}.f-input_checkbox-label{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;line-height:20px;color:#000;cursor:pointer;display:flex}@media screen and (max-width:767px){.f-input_checkbox-label{font-size:14px;line-height:22px}}.f-input_checkbox-label::before{content:"";display:inline-block;border:1px solid #000;height:18px;width:18px;margin-right:12px;text-align:center}.f-input_checkbox-field{clip:rect(1px,1px,1px,1px);position:absolute}.f-input_checkbox-field:checked+.f-input_checkbox-label::before{color:#fff;background-color:#000}.f-input_checkbox-field:disabled+.f-input_checkbox-label{border-color:#bababa;color:#bababa}.f-input_checkbox-field:disabled+.f-input_checkbox-label::before{border-color:#bababa}.f-input_checkbox-field:disabled:checked+.f-input_checkbox-label::before{color:#fff;border-color:#bababa;background-color:#bababa}.f-input_file-field{opacity:0;overflow:hidden;position:absolute;z-index:-1}.f-input_file-control{background-color:#000;color:#fff;padding:10px 16px;cursor:pointer;display:inline-flex;text-align:center;outline:0;border:none;letter-spacing:1px;border-radius:4px;transition:all .3s ease;max-width:100%;text-transform:uppercase;transition:background-color .2s;vertical-align:top}.f-input_file-control:hover{background-color:#ed1c24}.f-input_file-control:hover{text-decoration:none}.f-input_file.m-disabled .f-input_file-control{cursor:default}.f-input_file-label{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;color:#000;margin-bottom:8px;display:inline-block;display:block;margin:5px 0 0;position:static}.f-input_file.m-required .f-input_file-label::before{color:inherit;content:'';display:inline-block;font-size:14px;margin-left:2px;vertical-align:top;border-radius:50%;background-color:#ed1c24;height:4px;width:4px;margin-right:4px;position:relative;top:8px}.f-input_file-label_description{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:10px;line-height:normal;color:#000;display:block;margin:10px 0 0}.f-input_file-label_description a{color:#000;text-decoration:underline}.f-input_file-label_description a:hover{text-decoration:none}.f-input_file-label_link{color:#000;cursor:pointer;text-decoration:underline}.f-input_file-label_link:hover{text-decoration:none}.f-input_text{display:block;position:relative}.f-input_text.m-icon::before{position:absolute;right:12px;bottom:12px;color:#ed1c24;background-color:#ed1c24;display:block;height:24px;width:24px}.f-input_text-field{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;-webkit-appearance:none;appearance:none;border:1px solid #dfdfdf;color:#000;outline:0;padding:13px 16px 14px;width:100%;box-sizing:border-box;position:relative;background:#fff;margin-left:0}@media screen and (max-width:767px){.f-input_text-field{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:14px}}.f-input_text-field:focus,.f-input_text-field:hover{border-color:#000;outline:0}.f-input_text-field::placeholder{color:#dfdfdf}.f-input_text.m-error .f-input_text-field{color:var(--color-error);border-color:#ed1c24}.f-input_text.m-disabled .f-input_text-field{background-color:#f3f3f3;color:rgba(223,223,223,.2);opacity:1;pointer-events:none;-webkit-text-fill-color:rgba(223,223,223,.2)}.f-input_text.m-disabled .f-input_text-field:focus.m-disabled,.f-input_text.m-disabled .f-input_text-field:focus:disabled,.f-input_text.m-disabled .f-input_text-field:hover.m-disabled,.f-input_text.m-disabled .f-input_text-field:hover:disabled{border-color:#000}.f-input_text-label{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;color:#000;margin-bottom:8px;display:inline-block}.f-input_text-field:not(:placeholder-shown)~.f-input_text-label{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:8px;letter-spacing:0;margin:0;text-transform:uppercase;top:18px}.f-input_text.m-required .f-input_text-label::before{color:inherit;content:'';display:inline-block;font-size:14px;margin-left:2px;vertical-align:top;border-radius:50%;background-color:#ed1c24;height:4px;width:4px;margin-right:4px;position:relative;top:8px}.f-input_text-label_description{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:10px;line-height:normal;color:#000;display:block;margin:10px 0 0}.f-input_text-label_description a{color:#000;text-decoration:underline}.f-input_text-label_description a:hover{text-decoration:none}.f-input_text-label_link{color:#000;cursor:pointer;text-decoration:underline}.f-input_text-label_link:hover{text-decoration:none}.f-input_radio{display:inline-block;position:relative}.f-input_radio-label{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;line-height:20px;color:#000;cursor:pointer;display:flex;align-items:center}@media screen and (max-width:767px){.f-input_radio-label{font-size:14px;line-height:22px}}.f-input_radio-label::before{border-radius:50%;background-color:#fff;content:"";display:inline-block;border:1px solid #000;height:18px;width:18px;margin-right:12px;text-align:center}.f-input_radio-field{clip:rect(1px,1px,1px,1px);position:absolute}.f-input_radio-field:checked+.f-input_radio-label{color:#000}.f-input_radio-field:checked+.f-input_radio-label::before{border-width:6px;height:8px;width:8px}.f-input_radio-field:disabled+.f-input_radio-label{border-color:#bababa;color:#bababa}.f-input_radio-field:disabled+.f-input_radio-label::before{border-color:#bababa}.f-input_radio-field:disabled:checked+.f-input_radio-label::before{color:#fff;border-color:#bababa}.f-select-element_wrapper{display:block;position:relative}.f-select-element{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;-webkit-appearance:none;appearance:none;border:1px solid #dfdfdf;color:#000;outline:0;padding:13px 16px 14px;width:100%;box-sizing:border-box;position:relative;background:#fff;margin-left:0;font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:14px;border-left-width:0;border-right-width:0;border-top-width:0;padding:15px 40px 10px 0}@media screen and (max-width:767px){.f-select-element{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:14px}}.f-select-element:focus,.f-select-element:hover{border-color:#000;outline:0}.f-select-element::placeholder{color:#dfdfdf}@media screen and (max-width:767px){.f-select-element{padding:15px 40px 10px 0}}.f-select option:checked{color:#000}.f-select.m-error .f-select-element_wrapper::after{color:#ed1c24}.f-select.m-error .f-select-element{color:var(--color-error);border-color:#ed1c24}.f-select.m-disabled .f-select-element{background-color:#f3f3f3;color:rgba(223,223,223,.2);opacity:1;pointer-events:none;-webkit-text-fill-color:rgba(223,223,223,.2)}.f-select.m-disabled .f-select-element:focus.m-disabled,.f-select.m-disabled .f-select-element:focus:disabled,.f-select.m-disabled .f-select-element:hover.m-disabled,.f-select.m-disabled .f-select-element:hover:disabled{border-color:#000}.f-select-label{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;color:#000;margin-bottom:8px;display:inline-block;display:block;margin:5px 0 0;position:static}.f-select.m-required .f-select-label::before{color:inherit;content:'';display:inline-block;font-size:14px;margin-left:2px;vertical-align:top;border-radius:50%;background-color:#ed1c24;height:4px;width:4px;margin-right:4px;position:relative;top:8px}.f-select.m-simple .f-select-element_wrapper{display:inline-block}.f-select.m-simple .f-select-element_wrapper::after{right:0}.f-select-element_wrapper.m-filled .f-select-element,.f-select.m-filled .f-select-element{color:#000}.f-select-element_wrapper.m-filled::after,.f-select.m-filled .f-select-element_wrapper::after{opacity:1}.f-select-label_description{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:10px;line-height:normal;color:#000;display:block;margin:10px 0 0}.f-select-label_description a{color:#000;text-decoration:underline}.f-select-label_description a:hover{text-decoration:none}.f-select.m-simple .f-select-element{border:none;line-height:normal;padding:0;width:auto}.f-select-label_link{color:#000;cursor:pointer;text-decoration:underline}.f-select-label_link:hover{text-decoration:none}.f-textarea-field{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;-webkit-appearance:none;appearance:none;border:1px solid #dfdfdf;color:#000;outline:0;padding:13px 16px 14px;width:100%;box-sizing:border-box;position:relative;background:#fff;margin-left:0;resize:vertical}@media screen and (max-width:767px){.f-textarea-field{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:14px}}.f-textarea-field:focus,.f-textarea-field:hover{border-color:#000;outline:0}.f-textarea-field::placeholder{color:#dfdfdf}.f-textarea.m-error .f-textarea-field{color:var(--color-error);border-color:#ed1c24}.f-textarea.m-disabled .f-textarea-field{background-color:#f3f3f3;color:rgba(223,223,223,.2);opacity:1;pointer-events:none;-webkit-text-fill-color:rgba(223,223,223,.2)}.f-textarea.m-disabled .f-textarea-field:focus.m-disabled,.f-textarea.m-disabled .f-textarea-field:focus:disabled,.f-textarea.m-disabled .f-textarea-field:hover.m-disabled,.f-textarea.m-disabled .f-textarea-field:hover:disabled{border-color:#000}.f-textarea-label{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:16px;color:#000;margin-bottom:8px;display:inline-block;display:block;margin:5px 0 0;position:static}.f-textarea.m-required .f-textarea-label::before{color:inherit;content:'';display:inline-block;font-size:14px;margin-left:2px;vertical-align:top;border-radius:50%;background-color:#ed1c24;height:4px;width:4px;margin-right:4px;position:relative;top:8px}.f-textarea-label_description{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:10px;line-height:normal;color:#000;display:block;margin:10px 0 0}.f-textarea-label_description a{color:#000;text-decoration:underline}.f-textarea-label_description a:hover{text-decoration:none}.f-textarea-label_link{color:#000;cursor:pointer;text-decoration:underline}.f-textarea-label_link:hover{text-decoration:none}.g-dropdown{position:relative}.g-dropdown-control{-webkit-appearance:none;appearance:none;cursor:pointer}.g-dropdown-menu{display:none;position:absolute;top:100%}.g-dropdown.m-opened .g-dropdown-menu{display:block}.l-popup{position:fixed;top:0;left:0;right:0;bottom:0;display:none}.l-popup-container{position:absolute;top:50%;left:50%;right:auto;bottom:auto;transform:translateX(calc((50%) * -1)) translateY(calc((50%) * -1));background-color:#fff;width:60vw;height:60vh;box-shadow:0 0 7px rgba(0,0,0,.5)}.g-carousel{position:relative;width:100%}.g-carousel-indicators{position:absolute;left:0;top:0;z-index:10;display:flex;justify-content:center;list-style-type:none;margin:0 10px}.g-carousel-indicators_item{margin:0 5px}.g-carousel-indicators_item.m-active{background-color:red}.g-carousel-wrap{overflow:hidden;width:100%}.g-carousel-list{display:flex}.g-carousel-item{box-sizing:content-box}.g-carousel-item_img{object-fit:cover;height:100%;width:100%}.g-carousel-nav{position:absolute;top:50%;transform:translateY(-50%);width:100%;display:flex;justify-content:space-between}.g-carousel-nav_thumb{font-size:32px}.b-card{width:25%;background-color:#dfdfdf}.b-card-body{padding:20px}.b-card-body_title{font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:24px;line-height:32px;margin-bottom:10px}.b-card-body_content{margin-bottom:20px}:root{--content-width:1200px}@media screen and (min-width:768px){:root{--content-width:768px}}@media screen and (min-width:1024px){:root{--content-width:1024px}}@media screen and (min-width:1200px){:root{--content-width:1200px}}@media screen and (min-width:1440px){:root{--content-width:1440px}}@media screen and (max-width:767px){:root{--content-width:100%}}body{height:4000px}
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+     ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+     ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+  max-width: 100%; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 0; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* Lists
+     ========================================================================== */
+ul,
+ol {
+  list-style: none;
+  margin: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+     ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+  outline: none; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* 2 */
+  box-sizing: border-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+     ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* stylelint-disable */
+:root {
+  --color-error:    #ed1c24;
+  --border-color: #dfdfdf;
+  --inverse-color-b-w: #242424;
+  --main-bg: #fafafa;
+  --color-text:     #151515; }
+
+:root.m-dark-scheme {
+  --color-error:    #ed1c24;
+  --border-color: #dfdfdf;
+  --inverse-color-b-w: #fafafa;
+  --main-bg: #242424;
+  --color-text:     #fafafa; }
+
+/* stylelint-enable */
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.m-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
+
+.b-error_sample {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #ed1c24; }
+
+.b-error_bg {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ed1c24;
+  padding: 9px 0;
+  background-color: #fae1e2;
+  border-bottom: 2px solid #ed1c24;
+  text-align: center; }
+
+/*md
+@no-stat
+
+# Media queries (breakpoints)
+
+We have a `media()` mixin for make it easier to implement responsive styling via media queries.
+
+## Configuration
+
+`media` mixin works with `$media` map where there're key-value pairs:
+`media-name: media query`
+
+This is how `$media` map looks:
+
+```
+$media: (
+    s: 'screen and (max-width: 767px)',
+    m: 'screen and (min-width: 768px) and (max-width: 1199px)',
+    l: 'screen and (min-width: 1200px)',
+    xl: 'screen and (min-width: 1440px)',
+);
+```
+
+## Usage
+
+Here is how to use `media()` mixin:
+
+```scss
+.b-block {
+    // styles outside of a media query
+
+    @include media(s) {
+        // styles for "s" viewports
+    };
+
+    @include media(m l) {
+        // styles for "m" and "l" viewports
+    };
+}
+```
+
+Simply edit this file and add your own media queries to `$media` map.
+
+*/
+.g-container {
+  margin: 0 auto;
+  max-width: var(--content-width);
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media screen and (max-width: 767px) {
+    .g-container {
+      padding-left: 8px;
+      padding-right: 8px; } }
+
+/* stylelint-disable declaration-no-important */
+/*
+#Helper classes
+*/
+/*
+##Hide element with display: none
+*/
+.h-hidden {
+  display: none !important; }
+
+.h-hidden-visual {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden; }
+
+.h-site_width {
+  margin: 0 auto;
+  max-width: var(--content-width);
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media screen and (max-width: 767px) {
+    .h-site_width {
+      padding-left: 8px;
+      padding-right: 8px; } }
+
+.h-hide-invisible {
+  visibility: hidden ; }
+
+.h-hide-text {
+  background-color: transparent ;
+  color: transparent ;
+  font-size: 0 ;
+  letter-spacing: 0 ;
+  line-height: 0 ;
+  text-shadow: none ; }
+
+.h-hide-visually {
+  border: 0 ;
+  clip: rect(1px, 1px, 1px, 1px) ;
+  max-height: 1px ;
+  max-width: 1px ;
+  overflow: hidden ;
+  padding: 0 ;
+  position: absolute ; }
+
+@media screen and (max-width: 767px) {
+  .h-hide-s {
+    display: none !important; } }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .h-hide-m {
+    display: none !important; } }
+
+@media screen and (min-width: 1200px) {
+  .h-hide-l {
+    display: none !important; } }
+
+@media screen and (min-width: 768px) {
+  .h-show_only-s {
+    display: none !important; } }
+
+@media screen and (max-width: 767px) {
+  .h-show_only-m {
+    display: none !important; } }
+
+@media screen and (min-width: 1200px) {
+  .h-show_only-m {
+    display: none !important; } }
+
+@media screen and (max-width: 1199px) {
+  .h-show_only-l {
+    display: none !important; } }
+
+/*
+##No hover/click events
+*/
+.h-no_events {
+  pointer-events: none; }
+
+.h-flex {
+  display: flex; }
+
+/*
+## Left indents
+*/
+.h-left-1 {
+  margin-left: 1px; }
+
+.h-left-2 {
+  margin-left: 2px; }
+
+.h-left-3 {
+  margin-left: 3px; }
+
+.h-left-4 {
+  margin-left: 4px; }
+
+.h-left-5 {
+  margin-left: 5px; }
+
+.h-left-6 {
+  margin-left: 6px; }
+
+.h-left-7 {
+  margin-left: 7px; }
+
+.h-left-8 {
+  margin-left: 8px; }
+
+.h-left-9 {
+  margin-left: 9px; }
+
+.h-left-10 {
+  margin-left: 10px; }
+
+.h-left-11 {
+  margin-left: 11px; }
+
+.h-left-12 {
+  margin-left: 12px; }
+
+.h-left-13 {
+  margin-left: 13px; }
+
+.h-left-14 {
+  margin-left: 14px; }
+
+.h-left-15 {
+  margin-left: 15px; }
+
+.h-left-16 {
+  margin-left: 16px; }
+
+.h-left-17 {
+  margin-left: 17px; }
+
+.h-left-18 {
+  margin-left: 18px; }
+
+.h-left-19 {
+  margin-left: 19px; }
+
+.h-left-20 {
+  margin-left: 20px; }
+
+.h-left-21 {
+  margin-left: 21px; }
+
+.h-left-22 {
+  margin-left: 22px; }
+
+.h-left-23 {
+  margin-left: 23px; }
+
+.h-left-24 {
+  margin-left: 24px; }
+
+.h-left-25 {
+  margin-left: 25px; }
+
+.h-left-26 {
+  margin-left: 26px; }
+
+.h-left-27 {
+  margin-left: 27px; }
+
+.h-left-28 {
+  margin-left: 28px; }
+
+.h-left-29 {
+  margin-left: 29px; }
+
+.h-left-30 {
+  margin-left: 30px; }
+
+.h-left-31 {
+  margin-left: 31px; }
+
+.h-left-32 {
+  margin-left: 32px; }
+
+.h-left-33 {
+  margin-left: 33px; }
+
+.h-left-34 {
+  margin-left: 34px; }
+
+.h-left-35 {
+  margin-left: 35px; }
+
+.h-left-36 {
+  margin-left: 36px; }
+
+.h-left-37 {
+  margin-left: 37px; }
+
+.h-left-38 {
+  margin-left: 38px; }
+
+.h-left-39 {
+  margin-left: 39px; }
+
+.h-left-40 {
+  margin-left: 40px; }
+
+.h-left-41 {
+  margin-left: 41px; }
+
+.h-left-42 {
+  margin-left: 42px; }
+
+.h-left-43 {
+  margin-left: 43px; }
+
+.h-left-44 {
+  margin-left: 44px; }
+
+.h-left-45 {
+  margin-left: 45px; }
+
+.h-left-46 {
+  margin-left: 46px; }
+
+.h-left-47 {
+  margin-left: 47px; }
+
+.h-left-48 {
+  margin-left: 48px; }
+
+.h-left-49 {
+  margin-left: 49px; }
+
+.h-left-50 {
+  margin-left: 50px; }
+
+.f-flex {
+  display: flex; }
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-text);
+  background-color: var(--main-bg); }
+
+h1 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 1.25; }
+
+h2 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.25; }
+
+h3 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.25; }
+
+h4 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.25; }
+
+h5 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25; }
+
+h6 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.25; }
+
+a {
+  color: #00a69b; }
+  a:hover, a:focus {
+    color: #0056b3; }
+
+/*
+# Button component
+
+This component is used for common styling for all buttons
+
+*/
+.g-button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  text-align: center;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  max-width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  vertical-align: top; }
+  .g-button:hover {
+    background-color: #ed1c24; }
+  .g-button:hover {
+    text-decoration: none; }
+
+/*
+
+# Checkboxes
+
+## HTML structure example:
+
+```
+<div class="f-input_checkbox">
+	<input id="checkbox-1" class="f-input_checkbox-field" type="checkbox">
+	<label for="checkbox-1" class="f-input_checkbox-label">I have a car</label>
+</div>
+```
+
+### Default
+
+```html_example
+<div class="f-input_checkbox">
+	<input id="checkbox-1" class="f-input_checkbox-field" type="checkbox">
+	<label for="checkbox-1" class="f-input_checkbox-label">I have a car</label>
+</div>
+```
+
+### Checked
+
+```html_example
+<div class="f-input_checkbox">
+	<input id="checkbox-2" class="f-input_checkbox-field" type="checkbox" checked>
+	<label for="checkbox-2" class="f-input_checkbox-label">I have a car</label>
+</div>
+```
+
+### Default disabled
+
+```html_example
+<div class="f-input_checkbox">
+	<input id="checkbox-3" class="f-input_checkbox-field" type="checkbox" disabled>
+	<label for="checkbox-3" class="f-input_checkbox-label">I have a car</label>
+</div>
+```
+
+### Checked disabled
+
+```html_example
+<div class="f-input_checkbox">
+	<input id="checkbox-4" class="f-input_checkbox-field" type="checkbox" checked disabled>
+	<label for="checkbox-5" class="f-input_checkbox-label">I have a car</label>
+</div>
+```
+*/
+.f-input_checkbox {
+  display: inline-block;
+  vertical-align: middle; }
+  .f-input_checkbox-label {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+    display: flex; }
+    @media screen and (max-width: 767px) {
+      .f-input_checkbox-label {
+        font-size: 14px;
+        line-height: 22px; } }
+    .f-input_checkbox-label::before {
+      content: "";
+      display: inline-block;
+      border: 1px solid #000000;
+      height: 18px;
+      width: 18px;
+      margin-right: 12px;
+      text-align: center; }
+  .f-input_checkbox-field {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute; }
+  .f-input_checkbox-field:checked + .f-input_checkbox-label::before {
+    color: #fff;
+    background-color: #000000; }
+  .f-input_checkbox-field:disabled + .f-input_checkbox-label {
+    border-color: #bababa;
+    color: #bababa; }
+  .f-input_checkbox-field:disabled + .f-input_checkbox-label::before {
+    border-color: #bababa; }
+  .f-input_checkbox-field:disabled:checked + .f-input_checkbox-label::before {
+    color: #fff;
+    border-color: #bababa;
+    background-color: #bababa; }
+
+.f-input_file-field {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.f-input_file-control {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  text-align: center;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  max-width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  vertical-align: top; }
+  .f-input_file-control:hover {
+    background-color: #ed1c24; }
+  .f-input_file-control:hover {
+    text-decoration: none; }
+
+.f-input_file.m-disabled .f-input_file-control {
+  cursor: default; }
+
+.f-input_file-label {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+  display: inline-block;
+  display: block;
+  margin: 5px 0 0;
+  position: static; }
+
+.f-input_file.m-required .f-input_file-label::before {
+  color: inherit;
+  content: '';
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 2px;
+  vertical-align: top;
+  border-radius: 50%;
+  background-color: #ed1c24;
+  height: 4px;
+  width: 4px;
+  margin-right: 4px;
+  position: relative;
+  top: 8px; }
+
+.f-input_file-label_description {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: normal;
+  color: #000000;
+  display: block;
+  margin: 10px 0 0; }
+  .f-input_file-label_description a {
+    color: #000000;
+    text-decoration: underline; }
+    .f-input_file-label_description a:hover {
+      text-decoration: none; }
+
+.f-input_file-label_link {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline; }
+  .f-input_file-label_link:hover {
+    text-decoration: none; }
+
+/*
+# Input Text field
+
+## Standard input field
+
+<form data-component="global/Form">
+
+### States
+
+#### Default
+
+```html_example
+
+<div class="f-input_text">
+	<label class="f-input_text-label"
+		for="input-1"
+	>First Name</label>
+	<input class="f-input_text-field"
+		data-component="global/Input"
+		data-js-field
+		id="input-1"
+		name="name"
+		maxlength="50"
+		placeholder="Placeholder"
+		type="text"
+	/>
+</div>
+<div class="f-input_text m-icon h-left-50">
+	<label class="f-input_text-label"
+		for="input-11"
+	>With icon</label>
+	<input class="f-input_text-field"
+		data-component="global/Input"
+		data-js-field
+		id="input-11"
+		name="name"
+		maxlength="50"
+		placeholder="Placeholder"
+		type="text"
+	/>
+</div>
+
+```
+#### Mandatory
+
+```html_example
+
+<div class="f-input_text m-required">
+	<label class="f-input_text-label"
+		for="input-2"
+	>First Name</label>
+	<input class="f-input_text-field"
+		data-component="global/Input"
+		data-js-field
+		id="input-2"
+		maxlength="50"
+		placeholder="Placeholder"
+		name="name"
+		required
+		type="text"
+	/>
+</div>
+<div class="f-input_text m-required m-icon h-left-50">
+	<label class="f-input_text-label"
+		for="input-22"
+	>With icon</label>
+	<input class="f-input_text-field"
+		data-component="global/Input"
+		data-js-field
+		id="input-22"
+		name="name"
+		maxlength="50"
+		placeholder="Placeholder"
+		required
+		type="text"
+	/>
+</div>
+
+```
+
+#### Error
+
+```html_example
+<div class="f-input_text m-error">
+	<label class="f-input_text-label"
+		data-optional-text=" (optional)"
+		for="input-5"
+	/>First Name</label>
+	<input class="f-input_text-field"
+		data-component="global/Input"
+		data-js-field
+		id="input-5"
+		maxlength="50"
+		placeholder=" "
+		name="name"
+		type="text"
+		value="prfsd"
+	/>
+</div>
+```
+
+#### Disabled
+
+```html_example
+<div class="f-input_text m-disabled">
+	<label class="f-input_text-label"
+		data-optional-text=" (optional)"
+		for="input-3"
+	>First Name</label>
+	<input class="f-input_text-field"
+		data-component="global/Input"
+		data-js-field
+		disabled
+		id="input-3"
+		maxlength="50"
+		placeholder=" "
+		name="name"
+		type="text"
+	/>
+</div>
+```
+
+### Modifications
+
+#### Without label modification
+
+```html_example
+<div class="f-input_text">
+	<input class="f-input_text-field"
+		data-component="global/Input"
+		data-js-field
+		maxlength="50"
+		placeholder=" "
+		name="name"
+		required
+		type="text"
+	/>
+</div>
+```
+</form>
+```
+</form>
+
+## Input field with the label and the label description
+
+```html_example
+<div class="f-input_text m-required">
+	<label for="input-8" class="f-input_text-label">First Name</label>
+	<input id="input-8 " class="f-input_text-field" type="text" name="name" maxlength="50"
+	placeholder=" " required data-component="global/Input" data-js-field>
+</div>
+<span class="f-input_text-label_description">
+	Delivery is possible only in the following country.<br/>
+	If you want to change the country of delivery, please use the <a href="#">country selector</a>.
+</span>
+```
+*/
+.f-input_text {
+  display: block;
+  position: relative; }
+  .f-input_text.m-icon::before {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    color: #ed1c24;
+    background-color: #ed1c24;
+    display: block;
+    height: 24px;
+    width: 24px; }
+  .f-input_text-field {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    appearance: none;
+    border: 1px solid #dfdfdf;
+    color: #000000;
+    outline: none;
+    padding: 13px 16px 14px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    margin-left: 0; }
+    @media screen and (max-width: 767px) {
+      .f-input_text-field {
+        font-family: "Roboto", "Arial", sans-serif;
+        font-weight: normal;
+        font-size: 14px; } }
+    .f-input_text-field:hover, .f-input_text-field:focus {
+      border-color: #000000;
+      outline: none; }
+    .f-input_text-field::placeholder {
+      color: #dfdfdf; }
+  .f-input_text.m-error .f-input_text-field {
+    color: var(--color-error);
+    border-color: #ed1c24; }
+  .f-input_text.m-disabled .f-input_text-field {
+    background-color: #f3f3f3;
+    color: rgba(223, 223, 223, 0.2);
+    opacity: 1;
+    pointer-events: none;
+    -webkit-text-fill-color: rgba(223, 223, 223, 0.2); }
+    .f-input_text.m-disabled .f-input_text-field:hover:disabled, .f-input_text.m-disabled .f-input_text-field:hover.m-disabled, .f-input_text.m-disabled .f-input_text-field:focus:disabled, .f-input_text.m-disabled .f-input_text-field:focus.m-disabled {
+      border-color: #000000; }
+  .f-input_text-label {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 8px;
+    display: inline-block; }
+  .f-input_text-field:not(:placeholder-shown) ~ .f-input_text-label {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 8px;
+    letter-spacing: 0;
+    margin: 0;
+    text-transform: uppercase;
+    top: 18px; }
+  .f-input_text.m-required .f-input_text-label::before {
+    color: inherit;
+    content: '';
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 2px;
+    vertical-align: top;
+    border-radius: 50%;
+    background-color: #ed1c24;
+    height: 4px;
+    width: 4px;
+    margin-right: 4px;
+    position: relative;
+    top: 8px; }
+  .f-input_text-label_description {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: normal;
+    color: #000000;
+    display: block;
+    margin: 10px 0 0; }
+    .f-input_text-label_description a {
+      color: #000000;
+      text-decoration: underline; }
+      .f-input_text-label_description a:hover {
+        text-decoration: none; }
+  .f-input_text-label_link {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline; }
+    .f-input_text-label_link:hover {
+      text-decoration: none; }
+
+/*
+# Radiobuttons
+
+## Default radio
+
+```html_example
+<div class="f-input_radio">
+	<input id="male" class="f-input_radio-field" type="radio" name="gender" value="male" checked>
+	<label class="f-input_radio-label" for="male">Male</label>
+</div>
+<div class="f-input_radio h-left-50">
+	<input id="female" class="f-input_radio-field" type="radio" name="gender" value="female">
+	<label class="f-input_radio-label" for="female">Female</label>
+</div>
+```
+
+## Disabled
+
+```html_example
+<div class="f-input_radio">
+	<input id="male1" class="f-input_radio-field" type="radio" name="gender1" value="male" checked disabled>
+	<label class="f-input_radio-label" for="male1">Male</label>
+</div>
+<div class="f-input_radio h-left-50">
+	<input id="female1" class="f-input_radio-field" type="radio" name="gender1" value="female" disabled>
+	<label class="f-input_radio-label" for="female1">Male</label>
+</div>
+```
+*/
+.f-input_radio {
+  display: inline-block;
+  position: relative; }
+  .f-input_radio-label {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 767px) {
+      .f-input_radio-label {
+        font-size: 14px;
+        line-height: 22px; } }
+    .f-input_radio-label::before {
+      border-radius: 50%;
+      background-color: #fff;
+      content: "";
+      display: inline-block;
+      border: 1px solid #000000;
+      height: 18px;
+      width: 18px;
+      margin-right: 12px;
+      text-align: center; }
+  .f-input_radio-field {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute; }
+  .f-input_radio-field:checked + .f-input_radio-label {
+    color: #000000; }
+  .f-input_radio-field:checked + .f-input_radio-label::before {
+    border-width: 6px;
+    height: 8px;
+    width: 8px; }
+  .f-input_radio-field:disabled + .f-input_radio-label {
+    border-color: #bababa;
+    color: #bababa; }
+  .f-input_radio-field:disabled + .f-input_radio-label::before {
+    border-color: #bababa; }
+  .f-input_radio-field:disabled:checked + .f-input_radio-label::before {
+    color: #fff;
+    border-color: #bababa; }
+
+/*
+# Select
+
+## Default select //TODO: make description like for the input_text
+
+```html_example
+<div class="f-select">
+    <span class="f-select-element_wrapper">
+        <select class="f-select-element">
+            <option value="" disabled></option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </span>
+</div>
+```
+
+## Default select with label
+
+```html_example
+<div class="f-select">
+    <label class="f-select-label ">Choose a pet</label>
+    <span class="f-select-element_wrapper">
+        <select class="f-select-element">
+            <option value="" disabled></option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </span>
+</div>
+```
+
+### Select is required
+
+```html_example
+<div class="f-select m-required">
+    <label class="f-select-label">Choose a pet</label>
+    <span class="f-select-element_wrapper">
+        <select class="f-select-element" required>
+            <option value="" disabled></option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </span>
+</div>
+```
+
+### Active select (optional)
+
+```html_example
+<div class="f-select m-prefilled">
+    <label class="f-select-label">Choose a pet<span class="f-select-optional_copy"> (optional)</span></label>
+    <span class="f-select-element_wrapper">
+        <select class="f-select-element">
+            <option value="" disabled></option>
+            <option value="dog" selected>Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </span>
+</div>
+```
+
+### Select in error state
+
+```html_example
+<div class="f-select m-error">
+    <span class="f-select-element_wrapper">
+        <select class="f-select-element">
+            <option value="" disabled></option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </span>
+</div>
+```
+
+### Disabled select
+
+```html_example
+<div class="f-select m-disabled">
+    <span class="f-select-element_wrapper">
+        <select class="f-select-element" disabled>
+            <option value="" disabled></option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </span>
+</div>
+```
+*/
+.f-select-element_wrapper {
+  display: block;
+  position: relative; }
+
+.f-select-element {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  appearance: none;
+  border: 1px solid #dfdfdf;
+  color: #000000;
+  outline: none;
+  padding: 13px 16px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  margin-left: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  padding: 15px 40px 10px 0; }
+  @media screen and (max-width: 767px) {
+    .f-select-element {
+      font-family: "Roboto", "Arial", sans-serif;
+      font-weight: normal;
+      font-size: 14px; } }
+  .f-select-element:hover, .f-select-element:focus {
+    border-color: #000000;
+    outline: none; }
+  .f-select-element::placeholder {
+    color: #dfdfdf; }
+  @media screen and (max-width: 767px) {
+    .f-select-element {
+      padding: 15px 40px 10px 0; } }
+
+.f-select option:checked {
+  color: #000000; }
+
+.f-select.m-error .f-select-element_wrapper::after {
+  color: #ed1c24; }
+
+.f-select.m-error .f-select-element {
+  color: var(--color-error);
+  border-color: #ed1c24; }
+
+.f-select.m-disabled .f-select-element {
+  background-color: #f3f3f3;
+  color: rgba(223, 223, 223, 0.2);
+  opacity: 1;
+  pointer-events: none;
+  -webkit-text-fill-color: rgba(223, 223, 223, 0.2); }
+  .f-select.m-disabled .f-select-element:hover:disabled, .f-select.m-disabled .f-select-element:hover.m-disabled, .f-select.m-disabled .f-select-element:focus:disabled, .f-select.m-disabled .f-select-element:focus.m-disabled {
+    border-color: #000000; }
+
+.f-select-label {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+  display: inline-block;
+  display: block;
+  margin: 5px 0 0;
+  position: static; }
+
+.f-select.m-required .f-select-label::before {
+  color: inherit;
+  content: '';
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 2px;
+  vertical-align: top;
+  border-radius: 50%;
+  background-color: #ed1c24;
+  height: 4px;
+  width: 4px;
+  margin-right: 4px;
+  position: relative;
+  top: 8px; }
+
+.f-select.m-simple .f-select-element_wrapper {
+  display: inline-block; }
+  .f-select.m-simple .f-select-element_wrapper::after {
+    right: 0; }
+
+.f-select.m-filled .f-select-element,
+.f-select-element_wrapper.m-filled .f-select-element {
+  color: #000000; }
+
+.f-select.m-filled .f-select-element_wrapper::after, .f-select-element_wrapper.m-filled::after {
+  opacity: 1; }
+
+.f-select-label_description {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: normal;
+  color: #000000;
+  display: block;
+  margin: 10px 0 0; }
+  .f-select-label_description a {
+    color: #000000;
+    text-decoration: underline; }
+    .f-select-label_description a:hover {
+      text-decoration: none; }
+
+.f-select.m-simple .f-select-element {
+  border: none;
+  line-height: normal;
+  padding: 0;
+  width: auto; }
+
+.f-select-label_link {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline; }
+  .f-select-label_link:hover {
+    text-decoration: none; }
+
+/*
+
+# Textarea
+
+## HTML structure example:
+
+```
+<div class="f-textarea">
+	<label for="textarea-1 " class="f-textarea-label">Label</label>
+	<textarea id="textarea-1" name="textarea" class="f-textarea-field"></textarea>
+</div>
+```
+
+### Default textarea
+
+```html_example
+<div class="f-textarea">
+	<label for="textarea-2" class="f-textarea-label">Label</label>
+	<textarea id="textarea-2" name="textarea" class="f-textarea-field"></textarea>
+</div>
+```
+
+### Textarea is required
+
+```html_example
+<div class="f-textarea m-required">
+	<label for="textarea-3" class="f-textarea-label">Label</label>
+	<textarea id="textarea-3" name="textarea" class="f-textarea-field" required></textarea>
+</div>
+```
+
+### Active textarea (optional)
+
+```html_example
+<div class="f-textarea m-prefilled">
+	<label for="textarea-4" class="f-textarea-label">Label<span class="f-textarea-optional_copy"> (optional)</span></label>
+	<textarea id="textarea-4" name="textarea" class="f-textarea-field">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eaque incidunt accusantium, sint debitis culpa.</textarea>
+</div>
+```
+
+### Textarea in error state
+
+```html_example
+<div class="f-textarea m-error">
+	<label for="textarea-5" class="f-textarea-label">Label</label>
+	<textarea id="textarea-5" name="textarea" class="f-textarea-field">asdf asf</textarea>
+</div>
+```
+
+### Disabled textarea
+
+```html_example
+<div class="f-textarea m-disabled">
+	<label for="textarea-6" class="f-textarea-label">Label</label>
+	<textarea id="textarea-6" name="textarea" class="f-textarea-field" disabled></textarea>
+</div>
+```
+
+### Textarea without label
+
+```html_example
+<div class="f-textarea">
+	<textarea name="textarea" class="f-textarea-field"></textarea>
+</div>
+```
+*/
+.f-textarea-field {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  appearance: none;
+  border: 1px solid #dfdfdf;
+  color: #000000;
+  outline: none;
+  padding: 13px 16px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  margin-left: 0;
+  resize: vertical; }
+  @media screen and (max-width: 767px) {
+    .f-textarea-field {
+      font-family: "Roboto", "Arial", sans-serif;
+      font-weight: normal;
+      font-size: 14px; } }
+  .f-textarea-field:hover, .f-textarea-field:focus {
+    border-color: #000000;
+    outline: none; }
+  .f-textarea-field::placeholder {
+    color: #dfdfdf; }
+
+.f-textarea.m-error .f-textarea-field {
+  color: var(--color-error);
+  border-color: #ed1c24; }
+
+.f-textarea.m-disabled .f-textarea-field {
+  background-color: #f3f3f3;
+  color: rgba(223, 223, 223, 0.2);
+  opacity: 1;
+  pointer-events: none;
+  -webkit-text-fill-color: rgba(223, 223, 223, 0.2); }
+  .f-textarea.m-disabled .f-textarea-field:hover:disabled, .f-textarea.m-disabled .f-textarea-field:hover.m-disabled, .f-textarea.m-disabled .f-textarea-field:focus:disabled, .f-textarea.m-disabled .f-textarea-field:focus.m-disabled {
+    border-color: #000000; }
+
+.f-textarea-label {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+  display: inline-block;
+  display: block;
+  margin: 5px 0 0;
+  position: static; }
+
+.f-textarea.m-required .f-textarea-label::before {
+  color: inherit;
+  content: '';
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 2px;
+  vertical-align: top;
+  border-radius: 50%;
+  background-color: #ed1c24;
+  height: 4px;
+  width: 4px;
+  margin-right: 4px;
+  position: relative;
+  top: 8px; }
+
+.f-textarea-label_description {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: normal;
+  color: #000000;
+  display: block;
+  margin: 10px 0 0; }
+  .f-textarea-label_description a {
+    color: #000000;
+    text-decoration: underline; }
+    .f-textarea-label_description a:hover {
+      text-decoration: none; }
+
+.f-textarea-label_link {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline; }
+  .f-textarea-label_link:hover {
+    text-decoration: none; }
+
+/*
+Example:
+.g-dropdown {
+    @include dropdown;
+
+    &-control {
+        @include dropdown(control);
+    }
+
+    &-menu {
+        @include dropdown(menu);
+    }
+
+    &.m-opened &-menu {
+        @include dropdown(menu_opened);
+    }
+}
+*/
+.g-dropdown {
+  position: relative; }
+  .g-dropdown-control {
+    appearance: none;
+    cursor: pointer; }
+  .g-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; }
+  .g-dropdown.m-opened .g-dropdown-menu {
+    display: block; }
+
+.l-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+  .l-popup-container {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateX(calc((50%) * -1)) translateY(calc((90%) * -1));
+    background-color: #fff;
+    width: 60vw;
+    height: 60vh;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
+
+.g-carousel {
+  position: relative;
+  width: 100%; }
+  .g-carousel-indicators {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 10px; }
+  .g-carousel-indicators_item {
+    margin: 0 5px; }
+    .g-carousel-indicators_item.m-active {
+      background-color: red; }
+  .g-carousel-wrap {
+    overflow: hidden;
+    width: 100%; }
+  .g-carousel-list {
+    display: flex; }
+  .g-carousel-item {
+    box-sizing: content-box; }
+  .g-carousel-item_img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
+  .g-carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .g-carousel-nav_thumb {
+    font-size: 32px; }
+
+.b-card {
+  width: 25%;
+  background-color: #dfdfdf; }
+  .b-card-body {
+    padding: 20px; }
+  .b-card-body_title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px; }
+  .b-card-body_content {
+    margin-bottom: 20px; }
+
+.b-element_code {
+  background-color: #1e293b;
+  color: #bef264;
+  border-radius: 6px;
+  padding: 10px 20px;
+  position: relative; }
+  .b-element_code-pre {
+    overflow: hidden; }
+  .b-element_code-copy {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.25;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #00a69b;
+    padding: 3px 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #fafafa; }
+    .b-element_code-copy:hover, .b-element_code-copy:visited:hover, .b-element_code-copy:visited {
+      color: #fafafa; }
+
+.b-notice {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translateX(calc((50%) * -1)) translateY(calc((80%) * -1));
+  position: fixed;
+  background: #fafafa;
+  color: #242424;
+  padding: 20px;
+  border-radius: 5px; }
+
+.b-element_text {
+  padding: 0 10px; }
+  .b-element_text-title {
+    margin-bottom: 10px;
+    font-weight: bold; }
+  .b-element_text-text {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25;
+    margin-bottom: 10px; }
+
+.b-sidebar {
+  padding: 30px 0;
+  position: sticky;
+  top: 0; }
+  .b-sidebar-title {
+    color: #fafafa;
+    margin-bottom: 10px;
+    padding: 0 20px; }
+  .b-sidebar-list {
+    margin-bottom: 20px; }
+  .b-sidebar-list_item {
+    padding-bottom: 5px; }
+  .b-sidebar-list_item-link {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25;
+    display: block;
+    padding: 5px 20px;
+    background-color: transparent;
+    text-decoration: none; }
+    .b-sidebar-list_item-link:hover {
+      background-color: rgba(223, 223, 223, 0.2);
+      color: #00a69b; }
+
+.g-page {
+  display: grid;
+  height: 100%;
+  grid-template: [start g-header-s] auto [g-header-e g-sidebar-s g-content-s] minmax(auto, 1fr) [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-header-s g-footer-s g-sidebar-s] minmax(auto, 25%) [g-sidebar-e g-content-s] minmax(auto, 1fr) [g-content-e] auto [end g-header-e g-footer-e]; }
+
+.g-header {
+  grid-area: g-header-s/g-header-s / g-header-e/g-header-e;
+  background: linear-gradient(90deg, white 0%, #00a69b 35%, #0056b3 100%);
+  text-align: center;
+  padding: 20px;
+  height: 112px; }
+  .g-header h1 {
+    margin: 0; }
+
+.g-sidebar {
+  grid-area: g-sidebar-s/g-sidebar-s / g-sidebar-e/g-sidebar-e;
+  background-color: #0F172A;
+  height: calc(100% - 112px); }
+
+.g-content {
+  grid-area: g-content-s/g-content-s / g-content-e/g-content-e;
+  padding: 20px;
+  height: calc(100% - 112px); }
+
+.g-footer {
+  grid-area: g-footer-s/g-footer-s / g-footer-e/g-footer-e;
+  background-color: #ff6a00;
+  padding: 20px; }
+
+.b-element_section {
+  display: flex;
+  flex-wrap: wrap; }
+  .b-element_section.m-two .b-element_section-column {
+    flex-basis: 50%; }
+  .b-element_section-column {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+    margin-bottom: 40px; }
+  .b-element_section-desc {
+    flex-basis: 60%; }
+  .b-element_section-code {
+    flex-basis: 40%;
+    padding-top: 55px; }
+  .b-element_section-title {
+    padding: 10px 20px 20px;
+    flex-basis: 100%; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  height: 4000px; }

@@ -1,0 +1,31 @@
+.b-element_section {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.m-two {
+        .b-element_section-column {
+            flex-basis: 50%;
+        }
+    }
+
+    &-column {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+        padding: 0 10px; 
+        margin-bottom: 40px;
+    }
+
+    &-desc {
+        flex-basis: 60%;
+    }
+ 
+    &-code {
+        flex-basis: 40%;
+        padding-top: 55px;
+    }
+
+    &-title {
+        padding: 10px 20px 20px;
+        flex-basis: 100%;
+    }
+}
