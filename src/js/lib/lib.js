@@ -9,6 +9,7 @@ import './modules/components/modal';
 import './modules/components/tabs';
 import './modules/components/accordeon';
 import './modules/components/carousel';
+import './modules/components/carousel_extended';
 import './services/requests';
 
 export default $;

@@ -1,0 +1,95 @@
+@mixin g-accordion-styles(
+    $el: root,
+    $mod: default
+) {
+    @if $el == root {
+        @include g-accordion;
+
+        border-top: 1px solid color(gray-1);
+    }
+
+    @if $el == item {
+        border-bottom: 1px solid color(gray-1);
+    }
+
+    @if $el == control {
+        @if $mod == default {
+            @include g-accordion(control);
+            @include font(bold, 14px, 1.43);
+
+            padding: 19px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            &::after {
+                color: color(red);
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+                transform-origin: 50% 50%;
+            }
+        }
+
+        @if $mod == expanded {
+            @include g-accordion(control, expanded);
+            @include font(bold);
+        }
+    } 
+
+    @if $el == content {
+
+        @if $mod == default {
+            @include g-accordion(content);
+
+            padding-bottom: 0;
+        }
+
+        @if $mod == expanded {
+            @include g-accordion(content, expanded);
+
+            padding-bottom: 10px;
+        }
+    }
+}
+
+/*
+# Accordeon component example
+
+<div class="g-accordeon-wrapper">
+    <div class="g-accordeon-item" data-js-accord-item >
+        <div class="g-accordeon-control" data-js-accord-control >control</div>
+        <div class="g-accordeon-content" data-js-accord-content >content</div>
+    </div>
+</div>
+
+*/
+
+.g-accordeon-wrapper {
+    @include g-accordion-styles(root);
+
+    margin-bottom: 20px;
+}
+
+.g-accordeon-item {
+    @include g-accordion-styles(item);
+
+    &.m-expanded {
+        .g-accordeon-content {
+            @include g-accordion-styles($el: content, $mod: expanded);
+        }
+
+        .g-accordeon-control {
+            @include g-accordion-styles($el: control, $mod: expanded);
+        }
+    }
+}
+  
+.g-accordeon-control {
+    @include g-accordion-styles(control);
+}
+
+.g-accordeon-content {
+    @include g-accordion-styles(content);
+}

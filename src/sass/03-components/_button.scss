@@ -6,9 +6,9 @@ This component is used for common styling for all buttons
 */
 
 @mixin g-button($mod: default) {
-    background-color: color(black);
+    background-color: color(green);
     color: color(white);
-    padding: 10px 16px; 
+    padding: 11px 16px 9px; 
     cursor: pointer;
     display: inline-flex; 
     text-align: center;

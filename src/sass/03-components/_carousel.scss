@@ -1,21 +1,34 @@
 .g-carousel {
     position: relative;
     width: 100%;
+    max-width: 100%;
+    overflow: hidden; 
 
     &-indicators {
-        position: absolute;
-        left: 0;
-        top: 0;
+        @include pos-block(100%, 50%, $type: center-xy);
+        
+        margin-top: -10px;
         z-index: 10;
         display: flex;
         justify-content: center;
         list-style-type: none;
-        margin: 0 10px;
+        padding: 10px 5px;
+        border-radius: 2px;
+        background-color: rgba(0,0,0, .3);
     }
 
     &-indicators_item {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        background-color: color(white);
+        border-radius: 50%;
+        font-size: 0;
         margin: 0 5px;
+        transition: all 0.3s ease;
 
+        &:hover,
         &.m-active {
             background-color: red;
         }
@@ -27,11 +40,18 @@
     }
 
     &-list {
-        display: flex;
+        display: table;
     }
 
     &-item {
         box-sizing: content-box;
+        display: table-cell;
+        height: 100%;
+        font-size: 0;
+    }
+
+    .b-img {
+        height: 100%;
     }
 
     &-item_img {
@@ -49,8 +69,13 @@
         justify-content: space-between;
     }
 
-    &-nav_thumb {
+    &-control {
         font-size: 32px;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0,0,0, .5);
+        text-align: center;
+        cursor: pointer;
          
         &.m-next {
             

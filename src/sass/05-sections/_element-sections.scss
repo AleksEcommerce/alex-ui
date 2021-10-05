@@ -2,12 +2,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    &.m-two {
-        .b-element_section-column {
-            flex-basis: 50%;
-        }
-    }
-
     &-column { 
         flex-basis: 33.33%;
         max-width: 33.33%;
@@ -22,6 +16,11 @@
         @include media(s) {
             flex-basis: 100%;
             max-width: 100%;
+        }
+
+        &.m-two {
+            flex-basis: 50%;
+            max-width: 50%;
         }
     }
 

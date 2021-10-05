@@ -12,11 +12,13 @@
         background-color: $_scrollbar-color;
         height: $_scrollbar-height; // horizontal
         width: $_scrollbar-width; // vertical
+        border-radius: 4px;
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: $_thumb-color;
         border-radius: 0;
+        border-radius: 4px;
     }
 
     @content;

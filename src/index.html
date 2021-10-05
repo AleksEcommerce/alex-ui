@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Library</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="lib.js">
 </head>
 <body>
 <main class="l-main">
@@ -102,10 +103,10 @@
             <span class="g-button m-testmodal" data-toggle="modal" data-target="modal-1">g-modal</span>
             <span class="g-button m-testmodal" data-toggle="modal" data-target="modal-2">g-modal</span>
         </div>
-    
+        
         <div class="l-popup" data-modal-id="modal-1"> 
             <div class="l-popup-container">
-                <span class="l-popup-close" data-modal-close>123</span>
+                <span class="l-popup-close" data-modal-close></span>
                 <div class="l-popup-content">Popup Popup Popup POpup</div>
             </div>
         </div>
@@ -127,7 +128,6 @@
                     <div class="b-card-body_title">title</div>
                     <div class="b-card-body_content">Content</div>
                     <!-- <a href="#" class="b-card-body_link g-button" data-target="modal-3">Button-modal</a> -->
-                    <span class="b-card-body_link g-button" data-target="modal-3">Button-modal</span>
                 </div>
             </div>
         </div> 
@@ -171,7 +171,7 @@
         <div class="g-container">
             <!-- Accordion -->
     
-            <div class="accordion mt-20 block-center">
+            <!-- <div class="accordion mt-20 block-center">
                 <div class="accordion-head">
                     <strong>Collapse first element</strong>
                 </div>
@@ -188,10 +188,10 @@
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="g-container">
-            <div class="g-carousel" id="example">
+            <!-- <div class="g-carousel" id="example">
                 <ul class="g-carousel-indicators">
                     <li class="g-carousel-indicators_item m-active">1</li>
                     <li class="g-carousel-indicators_item" >2</li>
@@ -214,7 +214,7 @@
                     <span href="#" class="g-carousel-nav_thumb m-prev" data-slide="prev">&#9754;</span>
                     <span href="#" class="g-carousel-nav_thumb m-next" data-slide="next">&#9755;</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </main>
@@ -246,23 +246,46 @@
                         </li>
                     </ul>
 
-                    <h4 class="b-sidebar-title">Section 2</h4>
+                    <h4 class="b-sidebar-title">Handlers / Effects</h4>
                     <ul class="b-sidebar-list">
                         <li class="b-sidebar-list_item">
-                            <a href="#first-section" class="b-sidebar-list_item-link">Section 1</a>
+                            <a href="#handlers" class="b-sidebar-list_item-link">Handlers</a>
                         </li>
                         <li class="b-sidebar-list_item">
-                            <a href="#second-section" class="b-sidebar-list_item-link">Section 2</a>
+                            <a href="#effects" class="b-sidebar-list_item-link">Effects</a>
+                        </li>
+                    </ul>
+
+                    <h4 class="b-sidebar-title">Components</h4>
+                    <ul class="b-sidebar-list">
+                        <li class="b-sidebar-list_item">
+                            <a href="#accordeon" class="b-sidebar-list_item-link">Accordeon</a>
                         </li>
                         <li class="b-sidebar-list_item">
-                            <a href="#third-section" class="b-sidebar-list_item-link">Section 3</a>
+                            <a href="#tabs" class="b-sidebar-list_item-link">Tabs</a>
+                        </li>
+                        <li class="b-sidebar-list_item">
+                            <a href="#modal" class="b-sidebar-list_item-link">Modal</a>
+                        </li>
+                        <li class="b-sidebar-list_item">
+                            <a href="#carousel" class="b-sidebar-list_item-link">Carousel</a>
+                        </li>
+                        <li class="b-sidebar-list_item">
+                            <a href="#dropdown" class="b-sidebar-list_item-link">DropDown</a>
+                        </li>
+                    </ul>
+
+                    <h4 class="b-sidebar-title">Services</h4>
+                    <ul class="b-sidebar-list">
+                        <li class="b-sidebar-list_item">
+                            <a href="#requests" class="b-sidebar-list_item-link">Requests</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </aside>
+        </aside> 
         <main class="g-content">
-            <div class="g-container">
+                <!-- hr - CSS Classes -->
                 <section id="first-section" class="b-element_section">
                     <h3 class="b-element_section-title">CSS Classes</h3>
                     <article class="b-element_section-column">
@@ -316,6 +339,7 @@ $('.g-btn').on('click', function () {
                         </div>
                     </article>
                 </section>
+                <!-- hr - Actions methods -->
                 <section id="second-section" class="b-element_section">
                     <h3 class="b-element_section-title">Actions</h3>
                     <article class="b-element_section-column">
@@ -415,6 +439,7 @@ $('.more').eq(0).siblings().addClass('testclass')
                         </div>
                     </article>
                 </section>
+                <!-- hr - Display methods -->
                 <section id="third-section" class="b-element_section">
                     <h3 class="b-element_section-title">Display</h3>
                     <article class="b-element_section-column">
@@ -466,7 +491,486 @@ console.log($('.some-class').index());
                         </div>
                     </article>
                 </section>
-            </div>
+                <!-- hr - Handlers -->
+                <section id="handlers" class="b-element_section">
+                    <h3 class="b-element_section-title">Handlers</h3>
+                    <article class="b-element_section-column">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">ON method</h5>
+                            <p class="b-element_text-text">
+                                Allows you to hang various events on an element:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.t-daynight').on('click', function() {
+    $('html').toggleClass('m-dark-scheme');
+}); 
+                                </code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article class="b-element_section-column">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">OFF method</h5>
+                            <p class="b-element_text-text">
+                                Disable event on element:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.t-daynight').off('click', function() {
+    $('html').toggleClass('m-dark-scheme');
+}); 
+                                </code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article class="b-element_section-column">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">Click event</h5>
+                            <p class="b-element_text-text">
+                                Added click event to element:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.g-header').click(function() {
+    console.log($(this).index());
+}); 
+                                </code>
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+                <!-- hr - Effects -->
+                <section id="effects" class="b-element_section">
+                    <h3 class="b-element_section-title">Effects</h3>
+                    <article class="b-element_section-column">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">FadeIn</h5>
+                            <p class="b-element_text-text">
+                                Method gradually changes the opacity, for selected elements, from hidden to visible (fading effect):
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.some-div').fadeIn(2000);
+                                </code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article class="b-element_section-column">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">FadeOut</h5>
+                            <p class="b-element_text-text">
+                                Method gradually changes the opacity, for selected elements, from visible to hidden (fading effect):
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.some-div').off('click', function() {
+    $('.more').fadeOut(2000);
+}); 
+                                </code>
+                            </pre>
+                        </div>
+                    </article>
+                    <article class="b-element_section-column">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">Click event</h5>
+                            <p class="b-element_text-text">
+                                Added click event to element:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.g-header').click(function() {
+    console.log($(this).index());
+}); 
+                                </code>
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+                <!-- hr - Accordeon -->
+                <section id="accordeon" class="b-element_section m-two">
+                    <h3 class="b-element_section-title">Accordeon</h3>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">Accordeon</h5>
+                            <p class="b-element_text-text">
+                                Initialization JS:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.accordeon-first').accordeon(); // Example with one active item
+$('.accordeon-second').accordeon('extended'); // Example with multiply active items
+                                </code>
+                            </pre> 
+                        </div>
+                        <div class="b-element_text">
+                            <p class="b-element_text-text">
+                                Example HTML:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+<xmp class="b-element_code-code">
+<div class="g-accordeon-wrapper">
+    <div class="g-accordeon-item" data-js-accord-item >
+        <div class="g-accordeon-control" data-js-accord-control >control</div>
+        <div class="g-accordeon-content" data-js-accord-content >content</div>
+    </div>
+    <div class="g-accordeon-item" data-js-accord-item >
+        <div class="g-accordeon-control" data-js-accord-control >control</div>
+        <div class="g-accordeon-content" data-js-accord-content >content</div>
+    </div>
+</div>
+</xmp>
+                            </pre> 
+                        </div>
+                    </article> 
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_example">
+                            <div class="b-element_example-title">Example Only one active item</div>
+                            <div class="g-accordeon-wrapper" id="accordeon-first">
+                                <div class="g-accordeon-item" data-js-accord-item >
+                                    <div class="g-accordeon-control" data-js-accord-control>
+                                        <strong>Collapse first element</strong>
+                                    </div>
+                                    <div class="g-accordeon-content" data-js-accord-content>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                                    </div>
+                                </div>
+                                <div class="g-accordeon-item" data-js-accord-item >
+                                    <div class="g-accordeon-control" data-js-accord-control>
+                                        <strong>Collapse second element</strong>
+                                    </div>
+                                    <div class="g-accordeon-content" data-js-accord-content>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                                    </div>
+                                </div>
+                                <div class="g-accordeon-item" data-js-accord-item >
+                                    <div class="g-accordeon-control" data-js-accord-control>
+                                        <strong>Collapse third element</strong>
+                                    </div>
+                                    <div class="g-accordeon-content" data-js-accord-content>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-element_example-title">Example Multiply active items</div>
+                            <div class="g-accordeon-wrapper" id="accordeon-second">
+                                <div class="g-accordeon-item" data-js-accord-item >
+                                    <div class="g-accordeon-control" data-js-accord-control>
+                                        <strong>Collapse first element</strong>
+                                    </div>
+                                    <div class="g-accordeon-content" data-js-accord-content>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                                    </div>
+                                </div>
+                                <div class="g-accordeon-item" data-js-accord-item >
+                                    <div class="g-accordeon-control" data-js-accord-control>
+                                        <strong>Collapse second element</strong>
+                                    </div>
+                                    <div class="g-accordeon-content" data-js-accord-content>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                                    </div>
+                                </div>
+                                <div class="g-accordeon-item" data-js-accord-item >
+                                    <div class="g-accordeon-control" data-js-accord-control>
+                                        <strong>Collapse third element</strong>
+                                    </div>
+                                    <div class="g-accordeon-content" data-js-accord-content>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <!-- hr - Tabs -->
+                <section id="tabs" class="b-element_section m-two">
+                    <h3 class="b-element_section-title">Tabs</h3>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">Tabs</h5>
+                            <p class="b-element_text-text">
+                                Tabs simple:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('[data-tabpanel] .tab-item').tab(); 
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+<xmp class="b-element_code-code">
+<div class="g-tab" data-tab-container>
+    <div class="g-tab-navigation" data-tab-navigation>
+        <div class="g-tab-item m-active" data-tab-item>Content 1</div>
+        <div class="g-tab-item" data-tab-item>Content 2</div>
+        <div class="g-tab-item" data-tab-item>Content 3</div>
+    </div>
+    <div class="g-tab-content m-active" data-tab-content>
+        First content block
+    </div>
+    <div class="g-tab-content" data-tab-content>
+        Second content block
+    </div>
+    <div class="g-tab-content" data-tab-content>
+        Third content block
+    </div>
+</div>
+</xmp>
+                            </pre> 
+                        </div>
+                    </article>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_example">
+                            <div class="b-element_example-title">TAB Example</div>
+                            <div class="g-tab" data-tab-container>
+                                <div class="g-tab-navigation" data-tab-navigation>
+                                    <div class="g-tab-item m-active" data-tab-item>Content 1</div>
+                                    <div class="g-tab-item" data-tab-item>Content 2</div>
+                                    <div class="g-tab-item" data-tab-item>Content 3</div>
+                                </div>
+                                <div class="g-tab-content m-active" data-tab-content>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                                <div class="g-tab-content" data-tab-content>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                                <div class="g-tab-content" data-tab-content>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <!-- hr - Modal -->
+                <section id="modal" class="b-element_section m-two">
+                    <h3 class="b-element_section-title">Modal</h3>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">Modal Simple</h5>
+                            <p class="b-element_text-text">
+                                This method for simple modal window:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <xmp class="b-element_code-code">
+// JS Init Simple Initialization                                   
+$('[data-toggle="modal"]').modal();
+
+// Html Structure of Window
+<span class="g-button m-testmodal" data-toggle="modal" data-target="modal-1">g-modal</span>
+
+
+// Html Structure of modalTrigger
+<div class="l-popup" data-modal-id="modal-1"> 
+    <div class="l-popup-container">
+        <span class="l-popup-close" data-modal-close=""></span>
+        <div class="l-popup-content"></div>
+    </div>
+</div>
+                                </xmp>
+                            </pre>
+                        </div>
+                    </article>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_example">
+                            <div class="b-element_example-title">Popup Example Simple</div><br />
+                            <div class="l-popup" data-modal-id="modal-1"> 
+                                <div class="l-popup-container">
+                                    <span class="l-popup-close" data-modal-close></span>
+                                    <div class="l-popup-content">Popup Popup Popup POpup</div>
+                                </div>
+                            </div>
+                            <span class="g-button m-testmodal" data-toggle="modal" data-target="modal-1">g-modal trigger simple</span><br />
+                        </div>
+                    </article>
+
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">Modal Extended</h5>
+                            <p class="b-element_text-text">
+                                This method for extended modal window:
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <xmp class="b-element_code-code">
+// JS Init Extended Initialization                                   
+$('[data-target="modal-3"]').click(() => $('[data-target="modal-3"]').createModal({
+    text: {
+        title: 'Modal Title',
+        content: 'Some Body'
+    },
+    btns: {
+        count: 2, // Numbers of btns
+        settings: [
+            [
+                'close window', // Text button
+                ['g-button', 'btn-close'], // Add classes to button
+                true // Indicates closing button
+            ],
+            [
+                'Save changes', // Text button
+                ['g-button', 'btn-send'], // Add classes to button
+                false, // Indicates closing button
+                () => {
+                    alert('Function')
+                }
+            ] 
+        ]
+    }
+}));
+                                </xmp>
+                            </pre>
+                        </div>
+                    </article>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_example">
+                            <div class="b-element_example-title">Popup Example Extended</div><br />
+                            <span class="g-button m-testmodal" data-toggle="modal" data-target="modal-3">g-modal trigger extended</span><br />
+                        </div>
+                    </article>
+                </section>
+                <!-- hr - Carousel -->
+                <section id="carousel" class="b-element_section m-two">
+                    <h3 class="b-element_section-title">Carousel</h3>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">Carousel</h5>
+                            <p class="b-element_text-text">
+                                Method gradually changes the opacity, for selected elements, from hidden to visible (fading effect):
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.g-carousel').carousel();
+                                </code>
+                            </pre> 
+                        </div>
+                    </article> 
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_example">
+                            <!--  -->
+                            <div class="g-carousel" id="example" data-component-options='{
+                                    "pagination": true,
+                                    "paginationClass": "g-carousel-indicators",
+                                    "navigation": true,
+                                    "columns": 1,
+                                    "prevBtnClass": "g-carousel-control m-previous",
+                                    "nextBtnClass": "g-carousel-control m-next"
+                            }'>
+                                <div class="g-carousel-wrap">
+                                    <div class="g-carousel-list">
+                                        <div class="g-carousel-item">
+                                            <figure class="b-img">
+                                                <img src="http://www.rosphoto.com/images/u/articles/1510/7_5.jpg" alt="photo" class="g-carousel-item_img">
+                                            </figure>
+                                            
+                                        </div>
+                                        <div class="g-carousel-item">
+                                            <figure class="b-img">
+                                                <img src="https://klike.net/uploads/posts/2020-01/1578662816_1.jpg" alt="photo" class="g-carousel-item_img">
+                                            </figure>
+                                            
+                                        </div>
+                                        <div class="g-carousel-item">
+                                            <figure class="b-img">
+                                                <img src="https://sebweo.com/wp-content/uploads/2019/06/landshaft-bernskikh-alp-v-yasniy-den_thumb.jpg" alt="photo" class="g-carousel-item_img">
+                                            </figure>
+                                            
+                                        </div>
+
+                                        <div class="g-carousel-item">
+                                            <figure class="b-img">
+                                                <img src="https://androidp1.ru/wp-content/uploads/2016/04/Android.jpg" alt="photo" class="g-carousel-item_img">
+                                            </figure>
+                                            
+                                        </div>
+                                        <div class="g-carousel-item">
+                                            <figure class="b-img">
+                                                <img src="https://www.imgonline.com.ua/examples/random-pixels-wallpaper-big.jpg" alt="photo" class="g-carousel-item_img">
+                                            </figure>
+                                        </div>
+                                        <div class="g-carousel-item">
+                                            <figure class="b-img">
+                                                <img src="https://www.rgo.ru/sites/default/files/styles/full_view/public/node/35205/img-1rertawegt.jpg?itok=uFtuJjmx" alt="photo" class="g-carousel-item_img">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="g-carousel-nav">
+                                    <span href="#" class="g-carousel-control m-prev" data-slide="prev">&#10094;</span>
+                                    <span href="#" class="g-carousel-control m-next" data-slide="next">&#10095;</span>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </article>
+                </section>
+                <!-- hr - Dropdown -->
+                <section id="dropdown" class="b-element_section m-two">
+                    <h3 class="b-element_section-title">DropDown</h3>
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_text">
+                            <h5 class="b-element_text-title">DropDown</h5>
+                            <p class="b-element_text-text">
+                                Method gradually changes the opacity, for selected elements, from hidden to visible (fading effect):
+                            </p>
+                        </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <code class="b-element_code-code">
+$('.g-dropdown').dropdown();
+                                </code>
+                            </pre> 
+                        </div>
+                    </article> 
+                    <article class="b-element_section-column m-two">
+                        <div class="b-element_example" style="display: flex;">
+                            <!--  -->
+                            <div class="g-dropdown">
+                                <div class="g-dropdown-control g-button" data-dropdown-control>Control</div>
+                                <div class="g-dropdown-menu" data-dropdown-menu>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </article>
+                </section>
         </main>
         <footer class="g-footer">
 

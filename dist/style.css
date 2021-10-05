@@ -756,9 +756,9 @@ This component is used for common styling for all buttons
 
 */
 .g-button {
-  background-color: #000000;
+  background-color: #80b023;
   color: #fff;
-  padding: 10px 16px;
+  padding: 11px 16px 9px;
   cursor: pointer;
   display: inline-flex;
   text-align: center;
@@ -871,9 +871,9 @@ This component is used for common styling for all buttons
   z-index: -1; }
 
 .f-input_file-control {
-  background-color: #000000;
+  background-color: #80b023;
   color: #fff;
-  padding: 10px 16px;
+  padding: 11px 16px 9px;
   cursor: pointer;
   display: inline-flex;
   text-align: center;
@@ -1680,11 +1680,27 @@ Example:
     appearance: none;
     cursor: pointer; }
   .g-dropdown-menu {
+    scrollbar-color: #d8d8d8 #fff;
+    scrollbar-width: thin;
+    overscroll-behavior-y: contain;
     display: none;
     position: absolute;
-    top: 100%; }
-  .g-dropdown.m-opened .g-dropdown-menu {
-    display: block; }
+    top: calc(100% + 5px);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 6px;
+    width: 200px;
+    max-height: 200px;
+    overflow-y: auto; }
+    .g-dropdown-menu::-webkit-scrollbar {
+      background-color: #fff;
+      height: 119px;
+      width: 4px;
+      border-radius: 4px; }
+    .g-dropdown-menu::-webkit-scrollbar-thumb {
+      background-color: #d8d8d8;
+      border-radius: 0;
+      border-radius: 4px; }
 
 .l-popup {
   position: fixed;
@@ -1692,42 +1708,99 @@ Example:
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: none; }
   .l-popup-container {
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 50%;
     right: auto;
     bottom: auto;
-    transform: translateX(calc((50%) * -1)) translateY(calc((90%) * -1));
+    transform: translateX(calc((50%) * -1)) translateY(calc((50%) * -1));
     background-color: #fff;
     width: 60vw;
     height: 60vh;
+    padding: 20px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
+  .l-popup-content_title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #000000;
+    margin-bottom: 20px; }
+  .l-popup-content_content {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #000000;
+    margin-bottom: 20px; }
+  .l-popup-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer; }
+    .l-popup-close::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      content: '\2613'; }
+  .l-popup .g-button {
+    margin-right: 10px; }
 
 .g-carousel {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; }
   .g-carousel-indicators {
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 100%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateX(calc((50%) * -1)) translateY(calc((100%) * -1));
+    margin-top: -10px;
     z-index: 10;
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin: 0 10px; }
+    padding: 10px 5px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.3); }
   .g-carousel-indicators_item {
-    margin: 0 5px; }
-    .g-carousel-indicators_item.m-active {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 0;
+    margin: 0 5px;
+    transition: all 0.3s ease; }
+    .g-carousel-indicators_item:hover, .g-carousel-indicators_item.m-active {
       background-color: red; }
   .g-carousel-wrap {
     overflow: hidden;
     width: 100%; }
   .g-carousel-list {
-    display: flex; }
+    display: table; }
   .g-carousel-item {
-    box-sizing: content-box; }
+    box-sizing: content-box;
+    display: table-cell;
+    height: 100%;
+    font-size: 0; }
+  .g-carousel .b-img {
+    height: 100%; }
   .g-carousel-item_img {
     object-fit: cover;
     height: 100%;
@@ -1739,8 +1812,143 @@ Example:
     width: 100%;
     display: flex;
     justify-content: space-between; }
-  .g-carousel-nav_thumb {
-    font-size: 32px; }
+  .g-carousel-control {
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    cursor: pointer; }
+
+/*
+# Accordeon component example
+
+<div class="g-accordeon-wrapper">
+    <div class="g-accordeon-item" data-js-accord-item >
+        <div class="g-accordeon-control" data-js-accord-control >control</div>
+        <div class="g-accordeon-content" data-js-accord-content >content</div>
+    </div>
+</div>
+
+*/
+.g-accordeon-wrapper {
+  -webkit-tap-highlight-color: transparent;
+  border-top: 1px solid #dfdfdf;
+  margin-bottom: 20px; }
+
+.g-accordeon-item {
+  border-bottom: 1px solid #dfdfdf; }
+  .g-accordeon-item.m-expanded .g-accordeon-content {
+    max-height: 3000px;
+    opacity: 1;
+    transition: max-height 0.6s cubic-bezier(1, 0, 1, 1), opacity 0.3s, visibility 0.3s ease 0.3s, padding 0.3s;
+    visibility: visible;
+    padding-bottom: 10px; }
+  .g-accordeon-item.m-expanded .g-accordeon-control {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700; }
+
+.g-accordeon-control {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  padding: 19px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .g-accordeon-control::after {
+    color: #ed1c24;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transform-origin: 50% 50%; }
+
+.g-accordeon-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.6s cubic-bezier(0, 1, 1, 1), opacity 0.3s, visibility 0.3s ease 0.3s, padding 0.3s;
+  visibility: hidden;
+  will-change: max-height, opacity, visibility;
+  padding-bottom: 0; }
+
+/*
+# Tabs component example
+
+<div class="g-tab" data-tab-container>
+    <div class="g-tab-navigation" data-tab-navigation>
+        <div class="g-tab-item m-active" data-tab-item>Content 1</div>
+        <div class="g-tab-item" data-tab-item>Content 2</div>
+        <div class="g-tab-item" data-tab-item>Content 3</div>
+    </div>
+    <div class="g-tab-content m-active" data-tab-content>
+        First content block
+    </div>
+    <div class="g-tab-content" data-tab-content>
+        Second content block
+    </div>
+    <div class="g-tab-content" data-tab-content>
+        Third content block
+    </div>
+</div>
+
+*/
+.g-tab {
+  -webkit-tap-highlight-color: transparent;
+  display: grid;
+  grid-template: [start g-tab-nav-s] auto [g-tab-nav-e g-tab-content-s] auto [end g-tab-content-e]/[start g-tab-nav-s g-tab-content-s] auto [end g-tab-nav-e g-tab-content-e];
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  overflow: hidden; }
+  .g-tab-navigation {
+    display: flex;
+    grid-area: g-tab-nav-s/g-tab-nav-s / g-tab-nav-e/g-tab-nav-e;
+    border-bottom: 1px solid #dfdfdf; }
+  .g-tab-item {
+    border-right: 1px solid #dfdfdf;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease; }
+    .g-tab-item:hover {
+      background-color: #80b023; }
+    .g-tab-item.m-active {
+      border-right: 1px solid #dfdfdf;
+      padding: 10px;
+      cursor: pointer;
+      background-color: transparent;
+      transition: all 0.3s ease;
+      background-color: #80b023; }
+      .g-tab-item.m-active:hover {
+        background-color: #80b023; }
+  .g-tab-content {
+    grid-area: g-tab-content-s/g-tab-content-s / g-tab-content-e/g-tab-content-e;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.3s, visibility 0.3s ease 0.3s;
+    visibility: hidden;
+    will-change: max-height, opacity, visibility;
+    padding: 10px; }
+    .g-tab-content.m-active {
+      grid-area: g-tab-content-s/g-tab-content-s / g-tab-content-e/g-tab-content-e;
+      opacity: 0;
+      overflow: hidden;
+      position: relative;
+      transition: opacity 0.3s, visibility 0.3s ease 0.3s;
+      visibility: hidden;
+      will-change: max-height, opacity, visibility;
+      padding: 10px;
+      grid-area: g-tab-content-s/g-tab-content-s / g-tab-content-e/g-tab-content-e;
+      opacity: 1;
+      transition: opacity 0.3s, visibility 0.3s ease 0.3s;
+      visibility: visible; }
 
 .b-card {
   width: 25%;
@@ -1761,9 +1969,20 @@ Example:
   color: #bef264;
   border-radius: 6px;
   padding: 10px 20px;
+  margin-bottom: 10px;
   position: relative; }
   .b-element_code-pre {
     overflow: hidden; }
+  .b-element_code-xmp {
+    white-space: break-spaces; }
+  .b-element_code-code {
+    white-space: break-spaces; }
+  .b-element_code-textarea {
+    background-color: #1e293b;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    resize: none; }
   .b-element_code-copy {
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 300;
@@ -1830,13 +2049,28 @@ Example:
       background-color: rgba(223, 223, 223, 0.2);
       color: #00a69b; }
 
+.b-element_example {
+  padding-top: 61px; }
+  .b-element_example-title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    background-color: #fff200;
+    color: #000000;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-flex; }
+
 .g-page {
   display: grid;
   height: 100%;
-  grid-template: [start g-header-s] auto [g-header-e g-sidebar-s g-content-s] minmax(auto, 1fr) [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-header-s g-footer-s g-sidebar-s] minmax(auto, 25%) [g-sidebar-e g-content-s] minmax(auto, 1fr) [g-content-e] auto [end g-header-e g-footer-e]; }
+  grid-template: [start g-header-s g-sidebar-s] auto [g-header-e g-content-s] minmax(auto, 1fr) [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-footer-s g-sidebar-s] minmax(auto, 25%) [g-sidebar-e g-content-s g-header-s] minmax(auto, 75%) [end g-header-e g-footer-e g-content-e]; }
   @media screen and (max-width: 1023px) {
     .g-page {
-      grid-template: [start g-header-s] auto [g-header-e g-sidebar-s g-content-s] minmax(auto, 1fr) [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-header-s g-footer-s g-sidebar-s g-content-s] minmax(auto, 25%) [g-sidebar-e] minmax(auto, 1fr) [g-content-e] auto [end g-header-e g-footer-e]; } }
+      grid-template: [start g-header-s] auto [g-header-e g-sidebar-s g-content-s] minmax(auto, 1fr) [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-header-s g-footer-s g-sidebar-s g-content-s] minmax(auto, 25%) [g-sidebar-e] minmax(auto, 75%) [end g-header-e g-footer-e g-content-e]; } }
 
 .g-header {
   grid-area: g-header-s/g-header-s / g-header-e/g-header-e;
@@ -1850,7 +2084,8 @@ Example:
 .g-sidebar {
   grid-area: g-sidebar-s/g-sidebar-s / g-sidebar-e/g-sidebar-e;
   background-color: #0F172A;
-  height: calc(100% - 112px); }
+  height: calc(100% - 112px);
+  border-right: 1px solid rgba(223, 223, 223, 0.2); }
   @media screen and (max-width: 1023px) {
     .g-sidebar {
       display: none; } }
@@ -1868,8 +2103,6 @@ Example:
 .b-element_section {
   display: flex;
   flex-wrap: wrap; }
-  .b-element_section.m-two .b-element_section-column {
-    flex-basis: 50%; }
   .b-element_section-column {
     flex-basis: 33.33%;
     max-width: 33.33%;
@@ -1883,6 +2116,9 @@ Example:
       .b-element_section-column {
         flex-basis: 100%;
         max-width: 100%; } }
+    .b-element_section-column.m-two {
+      flex-basis: 50%;
+      max-width: 50%; }
   .b-element_section-desc {
     flex-basis: 60%; }
   .b-element_section-code {

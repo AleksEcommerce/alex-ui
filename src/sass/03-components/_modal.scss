@@ -4,14 +4,56 @@
     left: 0;
     right: 0;
     bottom: 0; 
+    background-color: rgba(0,0,0, 0.5); 
     display: none;
 
     &-container {
-        @include pos-block(90%, 50%, $type: center-xy);
+        @include pos-block(50%, 50%, $type: center-xy);
 
         background-color: color(white);
         width: 60vw; 
         height: 60vh; 
+        padding: 20px;
         box-shadow: 0 0 7px rgba(0,0,0, 0.5);
+    }
+
+    &-content_title {
+        @include font(bold, 18px, 1.25);
+ 
+        color: color(black);
+        margin-bottom: 20px;
+    }
+
+    &-content_content {
+        @include font(thin, 14px, 1.25);
+
+        color: color(black);
+        margin-bottom: 20px;
+    }
+
+    &-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: color(black);
+        color: color(white);
+        border-radius: 50%;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            content: '\2613';
+        }
+    }
+
+    .g-button {
+        margin-right: 10px;
     }
 }

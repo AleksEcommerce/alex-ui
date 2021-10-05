@@ -1,0 +1,15 @@
+.b-element_example {
+    padding-top: 61px;
+
+    &-title {
+        @include font(bold, 14px, 1.25); 
+
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        background-color: color(yellow);
+        color: color(black);
+        padding: 10px;
+        border-radius: 3px;
+        display: inline-flex;
+    }
+}

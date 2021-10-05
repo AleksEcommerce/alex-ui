@@ -48,7 +48,6 @@ $.prototype.createModal = function({text, btns} = {}) {
     for (let i = 0; i < this.length; i++) {
         let modal = document.createElement('div');
         modal.classList.add('l-popup');  
-        console.log(this[i].getAttribute('data-target'));
         modal.setAttribute('data-modal-id', this[i].getAttribute('data-target'));
 
         // btns = {count, settings: [[text, classNames=[], close, callback]]}
@@ -69,9 +68,10 @@ $.prototype.createModal = function({text, btns} = {}) {
 
         modal.innerHTML = `
             <div class="l-popup-container">
+                <span class="l-popup-close" data-modal-close=""></span>
                 <div class="l-popup-content">
-                    <h3>${text.title}</h3>
-                    <p>${text.content}</p>  
+                    <h3 class="l-popup-content_title">${text.title}</h3>
+                    <p class="l-popup-content_content">${text.content}</p>  
                 </div>
                 <div class="l-popup-footer">
                 

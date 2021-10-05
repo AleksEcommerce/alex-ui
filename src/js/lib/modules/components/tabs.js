@@ -1,18 +1,18 @@
 import $ from '../../core';
 
-$.prototype.tab = function() {
+$.prototype.tab = function(activeClass = 'm-active') {
     for (let i = 0; i < this.length; i++) {
         $(this[i]).on('click', () => {
-            $(this[i]).addClass('tab-item--active')
+            $(this[i]).addClass(activeClass)
                     .siblings()
-                    .removeClass('tab-item--active')
-                    .closest('.tab')
-                    .find('.tab-content')
-                    .removeClass('tab-content--active')
+                    .removeClass(activeClass)
+                    .closest('[data-tab-container]')
+                    .find('[data-tab-content]')
+                    .removeClass(activeClass)
                     .eq($(this[i]).index())
-                    .addClass('tab-content--active');
+                    .addClass(activeClass);
         });
     }  
 };
 
-$('[data-tabpanel] .tab-item').tab(); 
+$('[data-tab-navigation] [data-tab-item]').tab(); 

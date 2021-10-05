@@ -1,0 +1,48 @@
+
+@mixin g-tabs (
+    $el: root,
+    $mod: default
+) {
+    @if $el == root {
+        -webkit-tap-highlight-color: color(transparent);
+        display: grid;
+        grid-template: 
+            [start g-tab-nav-s]
+            auto
+            [g-tab-nav-e g-tab-content-s]
+            auto
+            [end g-tab-content-e]
+            /
+            [start g-tab-nav-s g-tab-content-s] 
+            auto
+            [end g-tab-nav-e g-tab-content-e];
+    }
+
+    @if $el == navigation {
+        display: flex;
+        grid-area: g-tab-nav-s/g-tab-nav-s / g-tab-nav-e/g-tab-nav-e;
+    } 
+
+    @if $el == item {
+        
+    } 
+
+    @if $el == content {
+        grid-area: g-tab-content-s/g-tab-content-s / g-tab-content-e/g-tab-content-e;
+
+        @if $mod == default {
+            opacity: 0;
+            overflow: hidden;
+            position: relative;
+            transition: opacity 0.3s, visibility 0.3s ease 0.3s;
+            visibility: hidden;
+            will-change: max-height, opacity, visibility;
+        }
+
+        @if $mod == active {
+            opacity: 1;
+            transition: opacity 0.3s, visibility 0.3s ease 0.3s;
+            visibility: visible;
+        }
+    }
+}

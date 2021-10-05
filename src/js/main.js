@@ -5,7 +5,8 @@ import $ from "./lib/lib";
 
 $.prototype.copy = function() {
     for (let i = 0; i < this.length; i++) {
-        $(this[i]).on('click', () => {
+        $(this[i]).on('click', (e) => {
+            e.preventDefault();
             let modalCopied = document.createElement('div');
             let text = $(this[i]).eq(0).siblings().find('.b-element_code-code')[0];
             modalCopied.classList.add('b-notice', 'm-copied');
@@ -21,6 +22,9 @@ $.prototype.copy = function() {
 }
  
 $('.b-element_code .b-element_code-copy').copy(); 
+
+$('#accordeon-first').accordeon_ext();  
+$('#accordeon-second').accordeon_ext('extended'); 
 
 // $('.g-btn').on('click', function () { 
 //     $('div').eq(2).toggleClass('active');
@@ -46,7 +50,7 @@ console.log($('div').find('.more'));
 
 // $('.g-dropdown-control').dropdown();
 
-$('.g-dropdown').dropdown_attribute();
+$('.g-dropdown').dropdown();
 
 $('[data-toggle="modal"]').modal();
 
@@ -60,7 +64,7 @@ $('[data-target="modal-3"]').click(() => $('[data-target="modal-3"]').createModa
         settings: [
             [
                 'close',
-                ['g-button', 'close-modal'],
+                ['g-button', 'btn-close'],
                 true
             ],
             [
@@ -68,7 +72,7 @@ $('[data-target="modal-3"]').click(() => $('[data-target="modal-3"]').createModa
                 ['g-button', 'btn-send'],
                 false,
                 () => {
-                    alert('Data Saved')
+                    alert('Function')
                 }
             ] 
         ]

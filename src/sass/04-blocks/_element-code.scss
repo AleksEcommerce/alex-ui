@@ -3,10 +3,27 @@
     color: color(code-color);
     border-radius: 6px;
     padding: 10px 20px;
+    margin-bottom: 10px;
     position: relative;
 
     &-pre {
         overflow: hidden;
+    }
+
+    &-xmp {
+        white-space: break-spaces;
+    }
+
+    &-code {
+        white-space: break-spaces;
+    }
+
+    &-textarea {
+        background-color: color(code-bg);
+        border: none;
+        width: 100%;
+        overflow: hidden;
+        resize: none;
     }
 
     &-copy {

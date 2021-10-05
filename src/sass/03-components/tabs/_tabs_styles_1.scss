@@ -1,0 +1,90 @@
+@mixin g-tabs-styles(
+    $el: root,
+    $mod: default
+) {
+    @if $el == root {
+        @include g-tabs;
+
+        border: 1px solid color(gray-1);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    @if $el == item {
+        border-right: 1px solid color(gray-1);
+        padding: 10px;
+        cursor: pointer;
+        background-color: transparent;
+        transition: all 0.3s ease;
+
+        @if $mod == active {
+            background-color: color(green);
+        }
+
+        &:hover {
+            background-color: color(green);
+        }
+    }
+
+    @if $el == navigation {
+        @include g-tabs(navigation);
+
+        border-bottom: 1px solid color(gray-1);
+    }
+
+    @if $el == content {
+        @include g-tabs(content);
+
+        padding: 10px;
+
+        @if $mod == active {
+            @include g-tabs($el: content, $mod: active);
+        }
+    } 
+}
+
+/*
+# Tabs component example
+
+<div class="g-tab" data-tab-container>
+    <div class="g-tab-navigation" data-tab-navigation>
+        <div class="g-tab-item m-active" data-tab-item>Content 1</div>
+        <div class="g-tab-item" data-tab-item>Content 2</div>
+        <div class="g-tab-item" data-tab-item>Content 3</div>
+    </div>
+    <div class="g-tab-content m-active" data-tab-content>
+        First content block
+    </div>
+    <div class="g-tab-content" data-tab-content>
+        Second content block
+    </div>
+    <div class="g-tab-content" data-tab-content>
+        Third content block
+    </div>
+</div>
+
+*/
+
+.g-tab {
+    @include g-tabs-styles(root);
+
+    &-navigation {
+        @include g-tabs-styles(navigation);
+    }
+
+    &-item {
+        @include g-tabs-styles(item);
+
+        &.m-active {
+            @include g-tabs-styles($el: item, $mod: active);
+        }
+    }
+
+    &-content {
+        @include g-tabs-styles(content);
+
+        &.m-active {
+            @include g-tabs-styles($el: content, $mod: active);
+        }
+    }
+}
