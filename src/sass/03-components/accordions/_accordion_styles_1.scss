@@ -20,16 +20,6 @@
             padding: 19px 0;
             letter-spacing: 2px;
             text-transform: uppercase;
-
-            &::after {
-                color: color(red);
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                pointer-events: none;
-                transform-origin: 50% 50%;
-            }
         }
 
         @if $mod == expanded {

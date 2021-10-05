@@ -1847,6 +1847,8 @@ Example:
   .g-accordeon-item.m-expanded .g-accordeon-control {
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700; }
+    .g-accordeon-item.m-expanded .g-accordeon-control::after {
+      transform: rotate(180deg); }
 
 .g-accordeon-control {
   cursor: pointer;
@@ -1860,13 +1862,16 @@ Example:
   letter-spacing: 2px;
   text-transform: uppercase; }
   .g-accordeon-control::after {
-    color: #ed1c24;
+    border: 7px solid transparent;
+    border-top: 7px solid #fff;
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 50%;
-    transform: translateY(-50%);
+    margin-top: -3px;
+    content: '';
     pointer-events: none;
-    transform-origin: 50% 50%; }
+    transform-origin: 50% 50%;
+    transition: all 0.3s ease; }
 
 .g-accordeon-content {
   max-height: 0;
