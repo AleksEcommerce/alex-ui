@@ -1793,7 +1793,8 @@ Example:
     overflow: hidden;
     width: 100%; }
   .g-carousel-list {
-    display: table; }
+    display: table;
+    height: 100%; }
   .g-carousel-item {
     box-sizing: content-box;
     display: table-cell;
@@ -2069,13 +2070,16 @@ Example:
     border-radius: 3px;
     display: inline-flex; }
 
+.b-footer_container {
+  text-align: right; }
+
 .g-page {
   display: grid;
   height: 100%;
-  grid-template: [start g-header-s g-sidebar-s] auto [g-header-e g-content-s] minmax(auto, 1fr) [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-footer-s g-sidebar-s] minmax(auto, 25%) [g-sidebar-e g-content-s g-header-s] minmax(auto, 75%) [end g-header-e g-footer-e g-content-e]; }
+  grid-template: [start g-header-s g-sidebar-s] auto [g-header-e g-content-s] auto [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-footer-s g-sidebar-s] minmax(auto, 25%) [g-sidebar-e g-content-s g-header-s] minmax(auto, 75%) [end g-header-e g-footer-e g-content-e]; }
   @media screen and (max-width: 1023px) {
     .g-page {
-      grid-template: [start g-header-s] auto [g-header-e g-sidebar-s g-content-s] minmax(auto, 1fr) [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-header-s g-footer-s g-sidebar-s g-content-s] minmax(auto, 25%) [g-sidebar-e] minmax(auto, 75%) [end g-header-e g-footer-e g-content-e]; } }
+      grid-template: [start g-header-s] auto [g-header-e g-sidebar-s g-content-s] auto [g-sidebar-e g-content-e g-footer-s] auto [end g-footer-e]/[start g-header-s g-footer-s g-sidebar-s g-content-s] minmax(auto, 25%) [g-sidebar-e] minmax(auto, 75%) [end g-header-e g-footer-e g-content-e]; } }
 
 .g-header {
   grid-area: g-header-s/g-header-s / g-header-e/g-header-e;
@@ -2089,7 +2093,6 @@ Example:
 .g-sidebar {
   grid-area: g-sidebar-s/g-sidebar-s / g-sidebar-e/g-sidebar-e;
   background-color: #0F172A;
-  height: calc(100% - 112px);
   border-right: 1px solid rgba(223, 223, 223, 0.2); }
   @media screen and (max-width: 1023px) {
     .g-sidebar {
@@ -2097,12 +2100,11 @@ Example:
 
 .g-content {
   grid-area: g-content-s/g-content-s / g-content-e/g-content-e;
-  padding: 20px;
-  height: calc(100% - 112px); }
+  padding: 20px; }
 
 .g-footer {
   grid-area: g-footer-s/g-footer-s / g-footer-e/g-footer-e;
-  background-color: #ff6a00;
+  background: linear-gradient(90deg, white 0%, #00a69b 35%, #0056b3 100%);
   padding: 20px; }
 
 .b-element_section {
@@ -2135,6 +2137,3 @@ Example:
 
 html {
   scroll-behavior: smooth; }
-
-body {
-  height: 4000px; }

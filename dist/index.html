@@ -59,12 +59,12 @@
                         </li>
                     </ul>
 
-                    <h4 class="b-sidebar-title">Services</h4>
+                    <!-- <h4 class="b-sidebar-title">Services</h4>
                     <ul class="b-sidebar-list">
                         <li class="b-sidebar-list_item">
                             <a href="#requests" class="b-sidebar-list_item-link">Requests</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </nav>
             </div>
         </aside> 
@@ -654,7 +654,7 @@ $('[data-target="modal-3"]').click(() => $('[data-target="modal-3"]').createModa
                         <div class="b-element_text">
                             <h5 class="b-element_text-title">Carousel</h5>
                             <p class="b-element_text-text">
-                                Method gradually changes the opacity, for selected elements, from hidden to visible (fading effect):
+                                Carousel with the ability to change the number of displayed slides, display navigation and pagination.
                             </p>
                         </div>
                         <div class="b-element_code">
@@ -665,6 +665,35 @@ $('.g-carousel').carousel();
                                 </code>
                             </pre> 
                         </div>
+                        <div class="b-element_code">
+                            <a href="#" class="b-element_code-copy">Copy to clipboard</a>
+                            <pre class="b-element_code-pre">
+                                <xmp class="b-element_code-code">
+<div class="g-carousel" id="example-1" data-component-options='{
+    "pagination": true,  // Works  only with one active slide
+    "paginationClass": "g-carousel-indicators",
+    "navigation": true,
+    "columns": 3,
+    "prevBtnClass": "g-carousel-control m-previous",
+    "nextBtnClass": "g-carousel-control m-next"
+}'>
+    <div class="g-carousel-wrap">
+        <div class="g-carousel-list">
+            <div class="g-carousel-item"></div>
+            <div class="g-carousel-item"></div>
+            <div class="g-carousel-item"></div>
+            <div class="g-carousel-item"></div>
+            <div class="g-carousel-item"></div>
+        </div>
+    </div>
+    <div class="g-carousel-nav">
+        <span href="#" class="g-carousel-control m-prev" data-slide="prev">&#10094;</span>
+        <span href="#" class="g-carousel-control m-next" data-slide="next">&#10095;</span>
+    </div>
+</div>
+                                </xmp>
+                            </pre> 
+                        </div>
                     </article> 
                     <article class="b-element_section-column m-two">
                         <div class="b-element_example">
@@ -673,7 +702,7 @@ $('.g-carousel').carousel();
                                     "pagination": true,
                                     "paginationClass": "g-carousel-indicators",
                                     "navigation": true,
-                                    "columns": 1,
+                                    "columns": 3,
                                     "prevBtnClass": "g-carousel-control m-previous",
                                     "nextBtnClass": "g-carousel-control m-next"
                             }'>
@@ -702,7 +731,6 @@ $('.g-carousel').carousel();
                                             <figure class="b-img">
                                                 <img src="https://androidp1.ru/wp-content/uploads/2016/04/Android.jpg" alt="photo" class="g-carousel-item_img">
                                             </figure>
-                                            
                                         </div>
                                         <div class="g-carousel-item">
                                             <figure class="b-img">
@@ -757,7 +785,11 @@ $('.g-dropdown').dropdown();
                 </section>
         </main>
         <footer class="g-footer">
-
+            <div class="g-container">
+                <div class="b-footer_container">
+                    <span class="b-footer_container-name">AlexUI Library</span>
+                </div>
+            </div>
         </footer>
     </main>
     <script src='lib.js'></script>

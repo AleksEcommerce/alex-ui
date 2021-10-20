@@ -83,9 +83,6 @@ $('[data-target="modal-3"]').click(() => $('[data-target="modal-3"]').createModa
 
  
 
-// $().get('https://jsonplaceholder.typicode.com/todos/1')
-//     .then(res => console.log(res.title));
-
 // const person = $().get('https://jsonplaceholder.typicode.com/todos/1')
 //         .then(res => console.log(res.title));
  

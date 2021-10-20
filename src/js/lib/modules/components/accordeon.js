@@ -20,6 +20,7 @@ $.prototype.accordeon_ext = function(
     for (let i = 0; i < this.length; i++) {
         const accordControl = this[i].querySelectorAll('[data-js-accord-control]'),
               accordItem = this[i].querySelectorAll('[data-js-accord-item]');
+        let counter = 1;
 
         accordControl.forEach(item => {
             $(item).click((e) => {
