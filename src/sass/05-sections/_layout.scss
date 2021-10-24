@@ -50,7 +50,6 @@
 
 .g-sidebar {
     grid-area: g-sidebar-s/g-sidebar-s / g-sidebar-e/g-sidebar-e;
-
     background-color: color(blue-sidebar); 
     border-right: 1px solid color(gray-2);
 
@@ -61,13 +60,11 @@
 
 .g-content {
     grid-area: g-content-s/g-content-s / g-content-e/g-content-e;
-
     padding: 20px;
 }
 
 .g-footer {
     grid-area: g-footer-s/g-footer-s / g-footer-e/g-footer-e;
-
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,166,155,1) 35%, rgba(0,86,179,1) 100%);
     padding: 20px;
 }

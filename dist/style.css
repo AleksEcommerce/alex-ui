@@ -452,6 +452,24 @@ Here is how to use `media()` mixin:
 Simply edit this file and add your own media queries to `$media` map.
 
 */
+:root {
+  --content-width: 1200px; }
+  @media screen and (min-width: 768px) {
+    :root {
+      --content-width: 768px; } }
+  @media screen and (min-width: 1024px) {
+    :root {
+      --content-width: 1024px; } }
+  @media screen and (min-width: 1200px) {
+    :root {
+      --content-width: 1200px; } }
+  @media screen and (min-width: 1440px) {
+    :root {
+      --content-width: 1440px; } }
+  @media screen and (max-width: 767px) {
+    :root {
+      --content-width: 100%; } }
+
 .g-container {
   margin: 0 auto;
   max-width: var(--content-width);

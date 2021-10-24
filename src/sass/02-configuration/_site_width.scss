@@ -1,29 +1,28 @@
 $site-padding-s: 8px;
 $site-padding-l: 20px;
 
-@mixin css-variables-layout {
-    :root {
-        --content-width: 1200px;
 
-        @include media(m-up) {
-            --content-width: 768px;
-        }
+:root {
+    --content-width: 1200px;
+
+    @include media(m-up) {
+        --content-width: 768px;
+    }
+
+    @include media(p-up) {
+        --content-width: 1024px;
+    }
+
+    @include media(l-up) {
+        --content-width: 1200px;
+    }
     
-        @include media(p-up) {
-            --content-width: 1024px;
-        }
-    
-        @include media(l-up) {
-            --content-width: 1200px;
-        }
-     
-        @include media(xl) {
-            --content-width: 1440px;
-        }
-    
-        @include media(s) {
-            --content-width: 100%;
-        }
+    @include media(xl) {
+        --content-width: 1440px;
+    }
+
+    @include media(s) {
+        --content-width: 100%;
     }
 }
 
